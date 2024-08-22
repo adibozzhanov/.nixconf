@@ -31,7 +31,6 @@
     file = {
       "wallpapers/.keep".source = builtins.toFile "keep" "";
       "screenshots/.keep".source = builtins.toFile "keep" "";
-      "nixoslogs/.keep".source = builtins.toFile "keep" "";
     };
     pointerCursor = {
       package = pkgs.bibata-cursors;
