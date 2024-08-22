@@ -9,7 +9,7 @@
 
     shellAliases = {
       hms = "home-manager switch --flake ~/.nixconf";
-      nrs = "sudo nixos-rebuild switch --flake ~/.nixconf";
+      nrs = "source ~/.nixconf/home-manager/scripts/nix-rebuild.fish";
       reb = "source ~/nix/home-manager/scripts/rebuild.sh";
     };
     
