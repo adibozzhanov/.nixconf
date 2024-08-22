@@ -10,6 +10,7 @@
     shellAliases = {
       rebh = "source ~/.nixconf/home-manager/scripts/home-rebuild.fish";
       rebn = "source ~/.nixconf/home-manager/scripts/nix-rebuild.fish";
+      confpush = "pushd ~/.nixconf && git push && popd";
     };
     
     plugins = [
