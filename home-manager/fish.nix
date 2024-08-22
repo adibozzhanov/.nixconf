@@ -8,9 +8,8 @@
     '';
 
     shellAliases = {
-      hms = "home-manager switch --flake ~/.nixconf";
-      nrs = "source ~/.nixconf/home-manager/scripts/nix-rebuild.fish";
-      reb = "source ~/nix/home-manager/scripts/rebuild.sh";
+      rebh = "source ~/.nixconf/home-manager/scripts/home-rebuild.fish";
+      rebn = "source ~/.nixconf/home-manager/scripts/nix-rebuild.fish";
     };
     
     plugins = [

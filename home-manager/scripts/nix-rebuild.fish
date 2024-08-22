@@ -6,3 +6,4 @@ git add -A
 git commit -am "$(nixos-rebuild list-generations | grep current)"
 popd
 
+
