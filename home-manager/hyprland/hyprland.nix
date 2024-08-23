@@ -4,6 +4,7 @@
   imports = [
     ./rofi.nix
     ./keybinds.nix
+    ./startup.nix
   ];
 
   home.packages = with pkgs; [
@@ -22,11 +23,7 @@
     "$mod" = "SUPER";
     "$terminal" = "kitty";
 
-    exec-once = [
-      "waypaper --restore"
-      "swaync"
-      "systemctl --user start plasma-polkit-agent"
-    ];
+
     
     monitor = ",preferred,auto-left,auto";
 
