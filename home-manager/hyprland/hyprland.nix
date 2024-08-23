@@ -1,6 +1,7 @@
 {pkgs, ...}:{
   imports = [
     ./rofi.nix
+    ./keybinds.nix
   ];
 
   home.packages = with pkgs; [
