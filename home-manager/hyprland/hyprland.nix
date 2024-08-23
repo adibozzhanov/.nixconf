@@ -27,11 +27,6 @@
 
   wayland.windowManager.hyprland.settings = {    
 
-    workspace = [
-      "special:terminals, on-created-empty: kitty"
-      "special:chats, on-created-empty: telegram-desktop"
-    ];
-
     windowrulev2 = [
       "suppressevent maximize, class:.*"
     ];
