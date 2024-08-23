@@ -4,16 +4,14 @@
   ];
 
   home.packages = with pkgs; [
-    hyprland-protocols
-    swww
-    waypaper
-    xdg-desktop-portal-hyprland
-    hyprkeys
-    hyprshot
-    swaynotificationcenter
-    qt5.qtwayland
-    libsForQt5.polkit-kde-agent
-    pamixer
+    hyprland-protocols # this some recommended thing for other stuff...
+    swww # wallpaper engine
+    waypaper # wallpapers gui
+    xdg-desktop-portal-hyprlan # some recommended thing for video streaming
+    hyprshot # screenshots
+    swaynotificationcenter # notifications
+    qt5.qtwayland # to be able to open qt windows
+    libsForQt5.polkit-kde-agent # authentication prompt for apps that are not opened in terminal
   ];
   
   wayland.windowManager.hyprland.enable = true;
