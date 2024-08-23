@@ -3,7 +3,7 @@
 {
   wayland.windowManager.hyprland.settings = {
     bind = [
-      "$mod SHIFT, O, kitty
+      "$mod SHIFT, O, kitty"
     ];
   };
 }
