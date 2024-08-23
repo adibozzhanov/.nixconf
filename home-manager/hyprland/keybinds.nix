@@ -25,7 +25,7 @@
       "$mod CTRL, B, movewindow, l"
       "$mod CTRL, F, movewindow, r"
       "$mod CTRL, P, movewindow, u"
-      "$mod CTRL, N, movewindow, d        "
+      "$mod CTRL, N, movewindow, d"
 
       # navigation
       "$mod, B, movefocus, l"
@@ -54,8 +54,6 @@
       "$mod SHIFT, 8, movetoworkspace, 8"
       "$mod SHIFT, 9, movetoworkspace, 9"
       "$mod SHIFT, 0, movetoworkspace, 10"
-      "CTRL, grave, togglespecialworkspace, terminals"
-      "$mod, c, togglespecialworkspace, chats"      
     ];
   };
 }

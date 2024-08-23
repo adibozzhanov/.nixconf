@@ -2,12 +2,13 @@
 
 {
   imports = [
+    ./special_workspaces.nix
     ./appearence.nix
     ./constants.nix
     ./keybinds.nix
     ./startup.nix
     ./monitors.nix
-    ./rofi.nix    
+    ./rofi.nix
   ];
 
   wayland.windowManager.hyprland.enable = true;
@@ -32,8 +33,6 @@
     ];
 
     windowrulev2 = [
-      "workspace special:terminals, class:^(kitty)$"
-      "workspace special:chats, class:^(org.telegram.desktop)$"
       "suppressevent maximize, class:.*"
     ];
 
