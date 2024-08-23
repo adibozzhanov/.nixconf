@@ -31,6 +31,8 @@
     file = {
       "wallpapers/.keep".source = builtins.toFile "keep" "";
       "screenshots/.keep".source = builtins.toFile "keep" "";
+      "code/.keep".source = builtins.toFile "keep" "";
+      "videos/.keep".source = builtins.toFile "keep" "";
     };
     pointerCursor = {
       package = pkgs.bibata-cursors;
@@ -48,7 +50,10 @@
       tree
       nodejs_22
       grc
+      whatsapp-for-linux
+      gnome.gnome-system-monitor
       gnome.nautilus
+      spotify
       nvtopPackages.full
     ];
     stateVersion = "24.05";    

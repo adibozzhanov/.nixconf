@@ -9,6 +9,7 @@
     ./startup.nix
     ./monitors.nix
     ./rofi.nix
+    ./windowrules.nix
   ];
 
   wayland.windowManager.hyprland.enable = true;
