@@ -2,10 +2,11 @@
 
 {
   imports = [
-    ./rofi.nix
+    ./constants.nix
     ./keybinds.nix
     ./startup.nix
     ./monitors.nix
+    ./rofi.nix    
   ];
 
   home.packages = with pkgs; [
@@ -20,10 +21,8 @@
   ];
   
   wayland.windowManager.hyprland.enable = true;
-  wayland.windowManager.hyprland.settings = {
-    "$mod" = "SUPER";
-    "$terminal" = "kitty";
-    
+  
+  wayland.windowManager.hyprland.settings = {    
     general = {
       gaps_in = "5";
       gaps_out = "5";
