@@ -30,12 +30,12 @@
       enabled = "true";
       bezier = "myBezier, 0.22, 1, 0.36, 1";
       animation = [
-        "windows, 1, 3, myBezier"
-        "workspaces, 1, 3, default"
+        "windows, 1, 5, myBezier"
+        "workspaces, 1, 5, default"
         "fade, 1, 7, default"
         "borderangle, 1, 8, default"
         "border, 1, 10, default"
-        "windowsOut, 1, 3, default, popin 80%"
+        "windowsOut, 1, 5, default, popin 80%"
       ];
     };
 
