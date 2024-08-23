@@ -7,7 +7,7 @@
     hyprland-protocols # this some recommended thing for other stuff...
     swww # wallpaper engine
     waypaper # wallpapers gui
-    xdg-desktop-portal-hyprlan # some recommended thing for video streaming
+    xdg-desktop-portal-hyprland # some recommended thing for video streaming
     hyprshot # screenshots
     swaynotificationcenter # notifications
     qt5.qtwayland # to be able to open qt windows
