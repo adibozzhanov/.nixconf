@@ -5,6 +5,7 @@
     ./rofi.nix
     ./keybinds.nix
     ./startup.nix
+    ./monitors.nix
   ];
 
   home.packages = with pkgs; [
@@ -22,11 +23,7 @@
   wayland.windowManager.hyprland.settings = {
     "$mod" = "SUPER";
     "$terminal" = "kitty";
-
-
     
-    monitor = ",preferred,auto-left,auto";
-
     general = {
       gaps_in = "5";
       gaps_out = "5";
