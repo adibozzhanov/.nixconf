@@ -13,14 +13,14 @@
     decoration = {
       rounding = "10";
       active_opacity = "1.0";
-      inactive_opacity = "1.0";
+      inactive_opacity = "0.8";
       drop_shadow = "true";
       shadow_range = "4";
       shadow_render_power = "3";
       "col.shadow" = "rgba(1a1a1aee)";     
       blur = {
         enabled = "true";
-        size = "3";
+        size = "8";
         passes = "1";
         vibrancy = "0.1696";
       };
@@ -28,7 +28,7 @@
 
     animations = {
       enabled = "true";
-      bezier = "myBezier, 0.05, 0.9, 0.1, 1.05";
+      bezier = "myBezier, 0.87, 0, 0.13, 1";
       animation = [
         "windows, 1, 7, myBezier"
         "workspaces, 1, 6, default"
