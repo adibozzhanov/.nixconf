@@ -25,7 +25,8 @@
     libsForQt5.polkit-kde-agent # authentication prompt for apps that are not opened in terminal
   ];
   
-  wayland.windowManager.hyprland.settings = {    
+  wayland.windowManager.hyprland.settings = {
+    natural_scroll = "true";
     input = {
       kb_layout = "us";
       follow_mouse = "1";
