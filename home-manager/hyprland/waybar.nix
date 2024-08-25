@@ -5,9 +5,9 @@
     settings = [{
       height = 30;
       layer = "top";
-      modules-right = [
+      modules-right = [        
+        "network"
         "battery"
-        "network"        
       ];
 
       modules-center = [
@@ -15,7 +15,7 @@
       ];
 
       modules-left = [
-        "cpu"
+        "cpu"        
         "memory"
       ];      
     }];

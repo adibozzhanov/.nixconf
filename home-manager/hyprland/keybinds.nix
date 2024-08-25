@@ -19,6 +19,7 @@
       "$mod, SPACE, exec, rofi -show drun"
       "$mod, Q, killactive"
       "$mod SHIFT, F, togglefloating"
+      "$mod SHIFT, B, pkill waybar && waybar"
 
       "$mod CTRL, B, movewindow, l"
       "$mod CTRL, F, movewindow, r"
