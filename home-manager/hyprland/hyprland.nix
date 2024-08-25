@@ -10,19 +10,20 @@
     ./monitors.nix
     ./rofi.nix
     ./windowrules.nix
+    ./waybar.nix
   ];
 
   wayland.windowManager.hyprland.enable = true;
 
   home.packages = with pkgs; [
-    hyprland-protocols          # this some recommended thing for other stuff...
-    swww                        # wallpaper engine
-    waypaper                    # wallpapers gui
-    xdg-desktop-portal-hyprland # some recommended thing for video streaming
-    hyprshot                    # screenshots
-    swaynotificationcenter      # notifications
-    qt5.qtwayland               # to be able to open qt windows
-    libsForQt5.polkit-kde-agent # authentication prompt for apps that are not opened in terminal
+    hyprland-protocols
+    swww
+    waypaper
+    xdg-desktop-portal-hyprland
+    hyprshot
+    swaynotificationcenter
+    qt5.qtwayland              
+    libsForQt5.polkit-kde-agent
   ];
   
   wayland.windowManager.hyprland.settings = {
