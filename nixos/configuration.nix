@@ -60,6 +60,11 @@
     enableSSHSupport = true;
   };
 
+  hardware.bluetooth = {
+    enable = true;
+    powerOnBoot = true;    
+  };
+  
   system.stateVersion = "24.05";
 }
 
