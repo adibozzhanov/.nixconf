@@ -23,7 +23,8 @@
     xdg-desktop-portal-hyprland
     hyprshot
     swaynotificationcenter
-    qt5.qtwayland              
+    qt5.qtwayland
+    nwg-displays
     libsForQt5.polkit-kde-agent
   ];
   
