@@ -54,6 +54,8 @@
       gnome.gnome-system-monitor
       gnome.nautilus
       spotify
+      slurp
+      wf-recorder
       nvtopPackages.full
     ];
     stateVersion = "24.05";    
