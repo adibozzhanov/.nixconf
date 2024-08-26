@@ -1,6 +1,6 @@
 {
   wayland.windowManager.hyprland.settings = {
-    
+    source = "~/.config/hypr/monitors.conf";
     monitor = [
       ",preferred, auto, auto"
       "eDP-1, highrr, 0x0, auto, bitdepth, 10"
