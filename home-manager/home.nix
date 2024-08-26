@@ -62,6 +62,7 @@
       gamescope
       pwvucontrol
       blueman
+      steam
       nvtopPackages.full
     ];
     stateVersion = "24.05";    
