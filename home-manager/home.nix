@@ -59,6 +59,7 @@
       vlc
       wf-recorder
       bash
+      pwvucontrol
       blueman
       nvtopPackages.full
     ];
