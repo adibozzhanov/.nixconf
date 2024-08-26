@@ -69,7 +69,7 @@
 
   programs.kitty = {
     enable = true;
-    theme = "Hybrid";
+    theme = "Ollie";
   };
   
   programs.git = {
