@@ -66,6 +66,10 @@
     ];
     stateVersion = "24.05";    
   };
+
+  programs.kitty = {
+    enable = true;
+  };
   
   programs.git = {
     enable = true;
