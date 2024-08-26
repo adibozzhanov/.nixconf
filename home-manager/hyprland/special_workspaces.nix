@@ -16,6 +16,8 @@
       "workspace special:chats, class:^(org.telegram.desktop)$"
       "workspace special:chats, class:^(whatsapp-for-linux)$"
       "workspace special:chats, class:^(webcord)$"
+      "workspace special:games, class:^(gamescope)$"
+      "fullscreen, class:^(gamescope)$"
     ];
 
     bind = [
