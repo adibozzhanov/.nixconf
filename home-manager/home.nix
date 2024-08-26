@@ -33,6 +33,7 @@
       "screenshots/.keep".source = builtins.toFile "keep" "";
       "code/.keep".source = builtins.toFile "keep" "";
       "videos/.keep".source = builtins.toFile "keep" "";
+      "recordings/.keep".source = builtins.toFile "keep" "";
     };
     pointerCursor = {
       package = pkgs.bibata-cursors;

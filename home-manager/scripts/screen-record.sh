@@ -1,6 +1,6 @@
 #!/bin/bash
 
-CLIPFILE="/home/bzv/screen-recordings/rec-$(date +%F_%T).mp4"
+CLIPFILE="/home/bzv/recordings/rec-$(date +%F_%T).mp4"
 
 pkill "wf-recorder" \
     || (wf-recorder \
