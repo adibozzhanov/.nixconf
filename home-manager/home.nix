@@ -59,11 +59,11 @@
       vlc
       wf-recorder
       bash
+      busybox
       nvtopPackages.full
     ];
     stateVersion = "24.05";    
   };
-  programs.wshowkeys.enable = true;
   
   programs.git = {
     enable = true;
