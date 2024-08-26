@@ -62,7 +62,6 @@
       gamescope
       pwvucontrol
       blueman
-      steam
       nvtopPackages.full
     ];
     stateVersion = "24.05";    
@@ -76,6 +75,5 @@
   imports = [
     ./fish.nix
     ./hyprland/hyprland.nix
-    ./steam.nix
   ];
 }
