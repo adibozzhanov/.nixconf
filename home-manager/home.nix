@@ -59,7 +59,7 @@
       vlc
       wf-recorder
       bash
-      screenkey
+      blueman
       nvtopPackages.full
     ];
     stateVersion = "24.05";    
