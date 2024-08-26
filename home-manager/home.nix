@@ -60,7 +60,6 @@
       wf-recorder
       bash
       gamescope
-      steam
       pwvucontrol
       blueman
       nvtopPackages.full
@@ -76,5 +75,6 @@
   imports = [
     ./fish.nix
     ./hyprland/hyprland.nix
+    ./steam.nix
   ];
 }
