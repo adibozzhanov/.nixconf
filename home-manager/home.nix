@@ -69,6 +69,7 @@
 
   programs.kitty = {
     enable = true;
+    theme = "Galaxy";
   };
   
   programs.git = {
