@@ -15,7 +15,7 @@
       # various
       ", Print, exec, hyprshot -m region -o ~/screenshots"
       "$mod SHIFT, W, exec, waypaper"
-      "$mod, R, exec, bash -c $scriptsDir/screen-record.sh"
+      "$mod, R, exec, $scriptsDir/screen-record.sh"
       "$mod, T, exec, $terminal"
       "$mod, SPACE, exec, rofi -show drun"
       "$mod, Q, killactive"
