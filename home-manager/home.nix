@@ -59,6 +59,7 @@
       vlc
       wf-recorder
       bash
+      screenkey
       nvtopPackages.full
     ];
     stateVersion = "24.05";    
