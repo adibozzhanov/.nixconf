@@ -6,7 +6,7 @@
     
     workspace = [
       "special:terminals, on-created-empty: kitty"
-      "special:spotify, on-created-empty: spotify"      
+      "special:spotify, on-created-empty: spotify"
       "special:chats, on-created-empty: telegram-desktop & webcord & whatsapp-for-linux"
     ];
     
@@ -15,7 +15,8 @@
       "workspace special:spotify, class:^(Spotify)$"      
       "workspace special:chats, class:^(org.telegram.desktop)$"
       "workspace special:chats, class:^(whatsapp-for-linux)$"
-      "workspace special:chats, class:^(webcord)$"      
+      "workspace special:chats, class:^(webcord)$"
+      "worksapce special:games, class:^(gamescope)$"
     ];
 
     bind = [
