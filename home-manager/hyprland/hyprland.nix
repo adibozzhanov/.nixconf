@@ -18,7 +18,6 @@
   home.packages = with pkgs; [
     libnotify
     hyprland-protocols
-    wlroots
     swww
     waypaper
     xdg-desktop-portal-hyprland
