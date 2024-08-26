@@ -23,6 +23,7 @@
       "CTRL, grave, togglespecialworkspace, terminals"
       "$mod, c, togglespecialworkspace, chats"
       "$mod, s, togglespecialworkspace, spotify"
+      "$mod, g, togglespecialworkspace, games"      
     ];
   };
 }
