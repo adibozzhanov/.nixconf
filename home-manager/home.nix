@@ -59,7 +59,6 @@
       vlc
       wf-recorder
       bash
-      busybox
       nvtopPackages.full
     ];
     stateVersion = "24.05";    
