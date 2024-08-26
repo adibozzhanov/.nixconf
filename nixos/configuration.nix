@@ -9,7 +9,6 @@
     [
       ./hardware-configuration.nix
       ./steam.nix
-      ./asus.nix
     ];
   
   boot.loader.systemd-boot.enable = true;
