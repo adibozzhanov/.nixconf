@@ -9,7 +9,6 @@
     [
       ./hardware-configuration.nix
       ./steam.nix
-      ./gamemode.nix
     ];
   
   boot.loader.systemd-boot.enable = true;
