@@ -60,7 +60,6 @@
       wf-recorder
       bash
       gamescope
-      gamemode
       pwvucontrol
       blueman
       nvtopPackages.full
