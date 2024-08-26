@@ -9,6 +9,7 @@
       "opacity 1 0.8, class:^(firefox)$"
       "float, class: ^(waypaper)$"
       "float, class: ^(.blueman-manager-wrapped)$"
+      "float, class: ^(com.saivert.pwvucontrol)$"      
       "idleinhibit fullscreen, class:^(*)$"
       "idleinhibit fullscreen, title:^(*)$"
       "idleinhibit fullscreen, fullscreen:1"
