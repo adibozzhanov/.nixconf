@@ -57,6 +57,7 @@
       spotify
       slurp
       wf-recorder
+      bash
       nvtopPackages.full
     ];
     stateVersion = "24.05";    
