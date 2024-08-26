@@ -17,7 +17,7 @@
       "$mod SHIFT, W, exec, waypaper"
       "$mod, R, exec, $scriptsDir/screen-record.sh"
       "$mod, T, exec, $terminal"
-      "$mod SHIFT, period, exec, econf"
+      "$mod SHIFT, period, exec, emacs ~/.nixconf"
       "$mod, SPACE, exec, rofi -show drun"
       "$mod, Q, killactive"
       "$mod SHIFT, F, togglefloating"
