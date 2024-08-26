@@ -57,6 +57,7 @@
       spotify
       slurp
       vlc
+      wshowkeys
       wf-recorder
       bash
       nvtopPackages.full
