@@ -76,6 +76,5 @@
     ./fish.nix
     ./hyprland/hyprland.nix
     ./kitty.nix
-    ./game-mode.nix
   ];
 }
