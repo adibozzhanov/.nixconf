@@ -57,13 +57,14 @@
       spotify
       slurp
       vlc
-      wshowkeys
       wf-recorder
       bash
       nvtopPackages.full
     ];
     stateVersion = "24.05";    
   };
+  programs.wshowkeys.enable = true;
+  
   programs.git = {
     enable = true;
     userName  = "Adi Bozzhanov";
