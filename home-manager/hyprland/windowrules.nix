@@ -1,8 +1,7 @@
 {
   wayland.windowManager.hyprland.settings = {
     windowrulev2 = [
-      "suppressevent maximize, class:.*"
-      
+      "suppressevent maximize, class:.*"      
       "opacity 0.9 0.8, class:^(kitty)$"
       "opacity 0.9 0.8, class:^(Spotify)$"
       "opacity 0.95 0.8, class:^(org.telegram.desktop)$"

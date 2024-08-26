@@ -59,6 +59,8 @@
       vlc
       wf-recorder
       bash
+      gamescope
+      steam
       pwvucontrol
       blueman
       nvtopPackages.full
