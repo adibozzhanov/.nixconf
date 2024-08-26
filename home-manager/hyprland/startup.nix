@@ -4,7 +4,7 @@
       "waypaper --restore"
       "swaync"
       "systemctl --user start plasma-polkit-agent"
-      "chmod +x "
+      "chmod +x ~/.nixconf/home-manager/scripts/*"
     ];    
   };
 }

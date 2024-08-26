@@ -1,4 +1,4 @@
-#!/bin/bash
+#bash
 
 CLIPFILE="/home/bzv/recordings/rec-$(date +%F_%T).mp4"
 
