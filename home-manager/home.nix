@@ -67,10 +67,7 @@
     stateVersion = "24.05";    
   };
 
-  programs.kitty = {
-    enable = true;
-    theme = "Ollie";
-  };
+
   
   programs.git = {
     enable = true;
@@ -80,5 +77,6 @@
   imports = [
     ./fish.nix
     ./hyprland/hyprland.nix
+    ./kitty.nix
   ];
 }
