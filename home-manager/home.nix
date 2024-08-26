@@ -67,8 +67,6 @@
     stateVersion = "24.05";    
   };
 
-
-  
   programs.git = {
     enable = true;
     userName  = "Adi Bozzhanov";
