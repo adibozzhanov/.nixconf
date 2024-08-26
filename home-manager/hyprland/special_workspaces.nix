@@ -16,14 +16,13 @@
       "workspace special:chats, class:^(org.telegram.desktop)$"
       "workspace special:chats, class:^(whatsapp-for-linux)$"
       "workspace special:chats, class:^(webcord)$"
-      "workspace special:games, class:^(gamescope)$"
     ];
 
     bind = [
       "CTRL, grave, togglespecialworkspace, terminals"
       "$mod, c, togglespecialworkspace, chats"
       "$mod, s, togglespecialworkspace, spotify"
-      "$mod, g, togglespecialworkspace, games"      
+      "$mod, g, togglespecialworkspace, games"
     ];
   };
 }
