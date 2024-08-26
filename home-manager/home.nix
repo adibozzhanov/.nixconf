@@ -56,6 +56,7 @@
       gnome.nautilus
       spotify
       slurp
+      vlc
       wf-recorder
       bash
       nvtopPackages.full
