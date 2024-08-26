@@ -21,6 +21,7 @@
       "$mod, Q, killactive"
       "$mod SHIFT, F, togglefloating"
       "$mod SHIFT, B, exec, pkill waybar && waybar"
+      ", F11, fullscreen"
 
       "$mod CTRL, B, movewindow, l"
       "$mod CTRL, F, movewindow, r"
