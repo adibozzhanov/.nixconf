@@ -25,7 +25,6 @@
         ];
       };
 
-
       homeConfigurations.bzv = home-manager.lib.homeManagerConfiguration {
         pkgs = nixpkgs.legacyPackages.${system};
         extraSpecialArgs = {
