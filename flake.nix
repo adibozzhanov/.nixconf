@@ -19,9 +19,6 @@
     in {
       nixosConfigurations.hestia = nixpkgs.lib.nixosSystem {
         inherit system;
-        specialArgs = {
-          inherit inputs;
-        };
         modules = [
           ./nixos/configuration.nix
           nixos-hardware.nixosModules.asus-zephyrus-ga402
@@ -31,6 +28,9 @@
 
       homeConfigurations.bzv = home-manager.lib.homeManagerConfiguration {
         pkgs = nixpkgs.legacyPackages.${system};
+        specialArgs = {
+          inherit inputs;
+        };        
         modules = [
           ./home-manager/home.nix
         ];
