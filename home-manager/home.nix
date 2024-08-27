@@ -60,6 +60,7 @@
       vlc
       wf-recorder
       bash
+      ffmpeg
       gamescope
       pwvucontrol
       blueman
