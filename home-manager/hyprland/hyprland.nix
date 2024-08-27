@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ inputs, pkgs, ... }:
 
 {
   imports = [
@@ -28,11 +28,9 @@
     libsForQt5.polkit-kde-agent
   ];
   
-  wayland.windowManager.hyprland.plugins = {
-    hyprwinwrap ={
-      class = "mpv";
-    };
-  };
+  wayland.windowManager.hyprland.plugins = [
+    inputs.hyprland-plugins.packages.${pkgs.system}.hyprbars
+  ];
   
   wayland.windowManager.hyprland.settings = {
 
