@@ -28,7 +28,7 @@
 
       homeConfigurations.bzv = home-manager.lib.homeManagerConfiguration {
         pkgs = nixpkgs.legacyPackages.${system};
-        specialArgs = {
+        extraSpecialArgs = {
           inherit inputs;
         };        
         modules = [
