@@ -14,6 +14,8 @@
     bind = [
       # various
       ", Print, exec, hyprshot -m region -o ~/screenshots"
+      "$mod SHIFT, right, exec, echo 'playlist-next' | socat - /tmp/mpv-socket"
+      "$mod SHIFT, left, exec, echo 'playlist-prev' | socat - /tmp/mpv-socket"
       "$mod, R, exec, $scriptsDir/screen-record.sh"
       "$mod, T, exec, $terminal"
       "$mod SHIFT, period, exec, kitty emacs -nw ~/.nixconf"

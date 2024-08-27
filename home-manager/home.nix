@@ -34,15 +34,19 @@
       "videos/.keep".source = builtins.toFile "keep" "";
       "recordings/.keep".source = builtins.toFile "keep" "";
     };
+    
     pointerCursor = {
       package = pkgs.bibata-cursors;
       name = "Bibata-Modern-Classic";
       size = 20;
       gtk.enable = true;
     };
+    
     packages = with pkgs; [
+      git-lfs
       neofetch
       htop
+      socat
       python3
       firefox
       telegram-desktop
@@ -75,6 +79,8 @@
     userName  = "Adi Bozzhanov";
     userEmail = "bozzhanov.at@gmail.com";
   };
+
+  
   imports = [
     ./fish.nix
     ./hyprland/hyprland.nix
