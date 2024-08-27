@@ -61,6 +61,7 @@
       wf-recorder
       bash
       ffmpeg
+      loupe
       gamescope
       pwvucontrol
       blueman
