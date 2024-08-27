@@ -26,8 +26,13 @@
     qt5.qtwayland
     nwg-displays
     libsForQt5.polkit-kde-agent
-    hyprlandPlugins.hyprwinwrap
   ];
+  
+  wayland.windowManager.hyprland.plugins = {
+    hyprwinwrap ={
+      class = "mpv";
+    };
+  };
   
   wayland.windowManager.hyprland.settings = {
 
