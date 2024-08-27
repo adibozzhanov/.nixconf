@@ -1,4 +1,4 @@
-{ config, pkgs, ... }: {
+{ inputs, config, pkgs, ... }: {
 
   nixpkgs = {
     config = {
@@ -24,6 +24,8 @@
       size = 11;
     };
   };
+
+  home-manager.extraSpecialArgs = { inherit inputs; };
   
   home = {
     username = "bzv";
