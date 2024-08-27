@@ -54,6 +54,7 @@
       whatsapp-for-linux
       gnome.gnome-system-monitor
       gnome.nautilus
+      gamemode
       spotify
       slurp
       vlc
