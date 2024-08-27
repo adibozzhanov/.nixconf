@@ -29,7 +29,6 @@
     username = "bzv";
     homeDirectory = "/home/bzv";
     file = {
-      "wallpapers/.keep".source = builtins.toFile "keep" "";
       "screenshots/.keep".source = builtins.toFile "keep" "";
       "code/.keep".source = builtins.toFile "keep" "";
       "videos/.keep".source = builtins.toFile "keep" "";
