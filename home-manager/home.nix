@@ -62,6 +62,7 @@
       bash
       ffmpeg
       loupe
+      mpv
       gamescope
       pwvucontrol
       blueman
