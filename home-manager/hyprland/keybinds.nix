@@ -14,7 +14,6 @@
     bind = [
       # various
       ", Print, exec, hyprshot -m region -o ~/screenshots"
-      "$mod SHIFT, W, exec, waypaper"
       "$mod, R, exec, $scriptsDir/screen-record.sh"
       "$mod, T, exec, $terminal"
       "$mod SHIFT, period, exec, kitty emacs -nw ~/.nixconf"

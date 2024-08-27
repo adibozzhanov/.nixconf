@@ -18,18 +18,15 @@
   home.packages = with pkgs; [
     libnotify
     hyprland-protocols
-    swww
-    waypaper
     xdg-desktop-portal-hyprland
     hyprshot
     swaynotificationcenter
     qt5.qtwayland
     nwg-displays
+    mpvpaper    
     libsForQt5.polkit-kde-agent
   ];
   
-  wayland.windowManager.hyprland.plugins = [
-  ];
   
   wayland.windowManager.hyprland.settings = {
 

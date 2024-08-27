@@ -63,7 +63,6 @@
       ffmpeg
       loupe
       mpv
-      mpvpaper
       gamescope
       pwvucontrol
       blueman
