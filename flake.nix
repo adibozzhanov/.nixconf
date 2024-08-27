@@ -25,6 +25,10 @@
         ];
       };
 
+      home-manager.nixosModules.home-manager {
+        home-manager.extraSpecialArgs = [inputs];
+      };
+
       homeConfigurations.bzv = home-manager.lib.homeManagerConfiguration {
         pkgs = nixpkgs.legacyPackages.${system};
         modules = [
