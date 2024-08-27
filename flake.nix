@@ -13,7 +13,7 @@
     };
   };
 
-  outputs = { nixpkgs, home-manager, nixos-hardware, ... }@inputs:
+  outputs = { nixpkgs, home-manager, hyprlnd, hyprland-plugins, nixos-hardware, ... }@inputs:
     let
       system = "x86_64-linux";
     in {
@@ -26,7 +26,7 @@
       };
 
       homeConfigurations.bzv = home-manager.lib.homeManagerConfiguration {
-        pkgs = nixpkgs.legacyPackages.${system};
+        inherit pkgs;
         extraSpecialArgs = {
           inherit inputs;
         };        
