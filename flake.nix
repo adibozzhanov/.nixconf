@@ -26,7 +26,7 @@
       };
 
       homeConfigurations.bzv = home-manager.lib.homeManagerConfiguration {
-        inherit pkgs;
+        pkgs = nixpkgs.legacyPackages.${system};
         extraSpecialArgs = {
           inherit inputs;
         };        
