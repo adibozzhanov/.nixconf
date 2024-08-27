@@ -13,7 +13,7 @@
     };
   };
 
-  outputs = { nixpkgs, inputs, home-manager, nixos-hardware, ... }:
+  outputs = { nixpkgs, home-manager, nixos-hardware, ... }@inputs:
     let
       system = "x86_64-linux";
     in {
