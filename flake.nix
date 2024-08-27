@@ -13,7 +13,7 @@
     };
   };
 
-  outputs = { self, nixpkgs, home-manager, hyprlnd, hyprland-plugins, nixos-hardware, ... }@inputs:
+  outputs = { self, nixpkgs, home-manager, hyprland, hyprland-plugins, nixos-hardware, ... }@inputs:
     let
       system = "x86_64-linux";
     in {
