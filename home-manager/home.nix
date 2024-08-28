@@ -43,6 +43,7 @@
     };
     
     packages = with pkgs; [
+      git-filter-repo
       git-lfs
       neofetch
       htop
@@ -78,6 +79,7 @@
     enable = true;
     userName  = "Adi Bozzhanov";
     userEmail = "bozzhanov.at@gmail.com";
+    lfs.enable = true;
   };
 
   
