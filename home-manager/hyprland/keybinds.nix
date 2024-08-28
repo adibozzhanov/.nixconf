@@ -22,6 +22,7 @@
       "$mod, SPACE, exec, rofi -show drun"
       "$mod, Q, killactive"
       "$mod SHIFT, F, togglefloating"
+      "$mod SHIFT, W, exec, pkill mpvpaper && ~/.nixconf/home-manager/scripts/wallpaper.sh"
       "$mod SHIFT, B, exec, pkill waybar && waybar"
       ", F11, fullscreen"
 
