@@ -43,6 +43,7 @@
     };
     
     packages = with pkgs; [
+      obs-studio
       git-filter-repo
       git-lfs
       neofetch
