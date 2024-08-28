@@ -1,4 +1,11 @@
 { config, pkgs, ... }: {
+  
+  imports = [
+    ./fish.nix
+    ./hyprland/hyprland.nix
+    ./kitty.nix
+    ./git.nix
+  ];
 
   nixpkgs = {
     config = {
@@ -74,19 +81,5 @@
       nvtopPackages.full
     ];
     stateVersion = "24.05";    
-  };
-
-  programs.git = {
-    enable = true;
-    userName  = "Adi Bozzhanov";
-    userEmail = "bozzhanov.at@gmail.com";
-    lfs.enable = true;
-  };
-
-  
-  imports = [
-    ./fish.nix
-    ./hyprland/hyprland.nix
-    ./kitty.nix
-  ];
+  }; 
 }
