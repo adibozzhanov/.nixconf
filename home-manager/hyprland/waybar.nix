@@ -33,7 +33,7 @@ window#waybar {
     background: transparent;
 }
 
-#clock {
+#clock #network #cpu #battery #memory {
     margin-top: 8px;
     padding-left: 16px;
     padding-right: 16px;
@@ -41,49 +41,7 @@ window#waybar {
     transition: none;
     color: #ffffff;
     min-height: 24px;
-    background: rgba(56, 60, 74, 0.4);
-}
-
-#network {
-    margin-top: 8px;
-    padding-left: 16px;
-    padding-right: 16px;
-    border-radius: 10px;
-    transition: none;
-    color: #ffffff;
-    background: #383c4a;
-}
-
-#cpu {
-    margin-left: 8px;
-    margin-top: 8px;
-    padding-left: 16px;
-    padding-right: 16px;
-    border-radius: 10px;
-    transition: none;
-    color: #ffffff;
-    background: #383c4a;
-}
-
-#battery {
-    margin-right: 8px;
-    margin-top: 8px;
-    padding-left: 16px;
-    padding-right: 16px;
-    border-radius: 10px;
-    transition: none;
-    color: #ffffff;
-    background: #383c4a;
-}
-
-#memory {
-    margin-top: 8px;
-    padding-left: 16px;
-    padding-right: 16px;
-    border-radius: 10px;
-    transition: none;
-    color: #ffffff;
-    background: #383c4a;
+    background: rgba(56, 60, 74, 0.5);
 }
       '';   
   };  
