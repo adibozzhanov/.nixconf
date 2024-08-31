@@ -45,6 +45,9 @@ window#waybar {
     min-height: 24px;
     background: rgba(56, 60, 74, 0.5);
 }
+#clock:hover, #network:hover, #cpu:hover, #battery:hover, #memory:hover {
+    background: rgba(56, 60, 74, 0.8);
+}
       '';   
   };  
 }
