@@ -74,6 +74,7 @@
       };
       
       "temperature" = {
+        on-click = "nvtop"
         critical-threshold = 80;
         format = "{temperatureC}°C {icon}";
         format-icons = ["" "" "" "" ""];
