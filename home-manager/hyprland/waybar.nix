@@ -30,7 +30,7 @@
 }
 
 window#waybar {
-    margin-top: 10px;
+    padding-top: 10px;
     background: transparent;
 }
 
