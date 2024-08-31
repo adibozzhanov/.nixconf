@@ -30,11 +30,12 @@
 }
 
 window#waybar {
+    margin-top: 8px;
+    padding-top: 8px;
     background: transparent;
 }
 
 #clock {
-    margin-top: 8px;
     padding-left: 16px;
     padding-right: 16px;
     border-radius: 10px;
