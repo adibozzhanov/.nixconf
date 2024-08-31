@@ -108,6 +108,10 @@ window#waybar {
     border-radius: 10px 0 0 10px;
 }
 
+#memory {
+    border-radius: 0 10px 10px 0;
+}
+
 #battery {
     margin-right: 16px;
 }
