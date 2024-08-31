@@ -33,7 +33,7 @@ window#waybar {
     background: transparent;
 }
 
-#clock #network #cpu #battery #memory {
+#clock, #network, #cpu, #battery, #memory {
     margin-top: 8px;
     padding-left: 16px;
     padding-right: 16px;
