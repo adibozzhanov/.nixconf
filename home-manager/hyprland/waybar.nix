@@ -40,8 +40,6 @@
           critical = 15;
         };
         format = "{capacity}% ";
-        format-charging = "{capacity}% ";
-        format-plugged = "{capacity}% ";
       };
       
       "cpu" = {
@@ -49,6 +47,12 @@
         format = "{usage}% ";
         min-length = 6;
       };
+
+      "memory" = {
+        interval = 2;
+        format = "{usage}% ";
+        min-length = 6;
+      };      
 
       "temperature" = {
         critical-threshold = 80;
