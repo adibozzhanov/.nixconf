@@ -1,6 +1,7 @@
 { pkgs, ...}:
 {
   home.packages = with pkgs; [
+    networkmanagerapplet    
     font-awesome
     obs-studio
     git-filter-repo
