@@ -26,11 +26,12 @@
     /* `otf-font-awesome` is required to be installed for icons */
     font-family: JetBrains Mono;
     font-weight: bold; 
-    min-height: 20px;
+    min-height: 0px;
 }
 
-window#waybar {
+window#waybar {    
     background: transparent;
+    padding-top: 5px;
 }
 
 #clock {   
