@@ -39,7 +39,7 @@
           warning = 30;
           critical = 15;
         };
-        format = "{capacity}% 🔋";
+        format = "{capacity}% ";
         format-charging = "{capacity}% ";
         format-plugged = "{capacity}% ";
       };
