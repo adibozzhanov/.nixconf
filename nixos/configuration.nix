@@ -54,8 +54,6 @@
     hyprland
     where-is-my-sddm-theme
     home-manager
-    udisks2
-    gnome.gnome-disk-utility    
   ];
 
   programs.mtr.enable = true;
