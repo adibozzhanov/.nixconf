@@ -32,6 +32,7 @@
 window#waybar {    
     background: transparent;
     padding-top: 5px;
+    border-top: 2px dashed #a678d3;
 }
 
 #clock {   
