@@ -18,6 +18,27 @@
         "temperature"
       ];
 
+      "pulseaudio" = {
+        reverse-scrolling = 1;
+        format = "{volume}% {icon} {format_source}";
+        format-bluetooth = "{volume}% {icon} {format_source}";
+        format-bluetooth-muted = " {icon} {format_source}";
+        format-muted = " {format_source}";
+        format-source = "{volume}% ";
+        format-source-muted = "";
+        format-icons = {
+          headphone = "";
+          hands-free = "";
+          headset = "";
+          phone = "";
+          portable = "";
+          car = "";
+          default = ["" "" ""];
+        };
+        on-click = "pavucontrol";
+        min-length = 13;
+      };
+
       battery = {
         states = {
           warning = 30;
@@ -59,7 +80,7 @@ window#waybar {
     background: transparent;
 }
 
-#clock, #network, #cpu, #battery, #memory, #temperature {
+#clock, #network, #cpu, #battery, #memory, #temperature, #pulseaudio {
     margin-top: 8px;
     margin-left: 4px;
     margin-right: 4px;
@@ -73,7 +94,7 @@ window#waybar {
     transition-duration: .5s;
     background-color: rgba(56, 60, 74, 0.5);
 }
-#clock:hover, #network:hover, #cpu:hover, #battery:hover, #memory:hover, #temperature:hover {
+#clock:hover, #network:hover, #cpu:hover, #battery:hover, #memory:hover, #temperature:hover, #pulseaudio:hover {
     background-color: rgba(56, 60, 74, 0.8);
 }
       '';   
