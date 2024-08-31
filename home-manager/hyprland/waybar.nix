@@ -59,6 +59,7 @@
         interval = 2;
         format = "{usage}% ";
         min-length = 6;
+        on-click = "gnome-system-monitor"
       };
 
       "memory" = {
