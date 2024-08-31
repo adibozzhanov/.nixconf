@@ -1,6 +1,7 @@
 { pkgs, ...}:
 {
   home.packages = with pkgs; [
+    gnome.gnome-disk-utility
     font-awesome
     obs-studio
     git-filter-repo
