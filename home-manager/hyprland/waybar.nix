@@ -71,15 +71,7 @@
       tray = {
         icon-size = 16;
         spacing = 0;
-      };
-      
-      "temperature" = {
-        critical-threshold = 80;
-        format = "{temperatureC}°C {icon}";
-        format-icons = ["" "" "" "" ""];
-        tooltip = false;
-      };
-      
+      };           
     }];
 
     style =
@@ -96,7 +88,7 @@ window#waybar {
     background: transparent;
 }
 
-#clock, #network, #cpu, #battery, #memory, #temperature, #pulseaudio, #tray {
+#clock, #network, #cpu, #battery, #memory, #pulseaudio, #tray {
     margin-top: 8px;
     margin-left: 4px;
     margin-right: 4px;
@@ -110,7 +102,7 @@ window#waybar {
     transition-duration: .5s;
     background-color: rgba(56, 60, 74, 0.5);
 }
-#clock:hover, #network:hover, #cpu:hover, #battery:hover, #memory:hover, #temperature:hover, #pulseaudio:hover, #tray:hover {
+#clock:hover, #network:hover, #cpu:hover, #battery:hover, #memory:hover, #pulseaudio:hover, #tray:hover {
     background-color: rgba(56, 60, 74, 0.8);
 }
       '';   
