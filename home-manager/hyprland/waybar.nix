@@ -36,7 +36,6 @@
       };
 
       "network" = {
-	      interface = "wlp2s0";
 	      format = "{ifname}";
 	      format-wifi = "{essid} ({signalStrength}%) ";
 	      format-ethernet = "{ifname} ";
