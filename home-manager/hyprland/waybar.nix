@@ -17,7 +17,6 @@
       modules-left = [
         "cpu"        
         "memory"
-        "temperature"
       ];
 
       "pulseaudio" = {
