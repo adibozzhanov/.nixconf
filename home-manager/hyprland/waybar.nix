@@ -30,18 +30,16 @@
 }
 
 window#waybar {
-    margin-top: 8px;
-    padding-top: 8px;
     background: transparent;
 }
 
-#clock {
+#clock {   
     padding-left: 16px;
     padding-right: 16px;
     border-radius: 10px;
     transition: none;
     color: #ffffff;
-    background: #383c4a;
+    background: #383c4a4a;
 }
       '';   
   };  
