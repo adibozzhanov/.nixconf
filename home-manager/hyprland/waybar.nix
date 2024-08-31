@@ -63,6 +63,16 @@ window#waybar {
     background: #383c4a;
 }
 
+#battery {
+    margin-top: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 10px;
+    transition: none;
+    color: #ffffff;
+    background: #383c4a;
+}
+
 #memory {
     margin-top: 8px;
     padding-left: 16px;
