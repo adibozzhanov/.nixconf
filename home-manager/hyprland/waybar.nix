@@ -43,10 +43,12 @@ window#waybar {
     transition: none;
     color: #ffffff;
     min-height: 24px;
-    background: rgba(56, 60, 74, 0.5);
+    transition-property: background-color;
+    transition-duration: .5s;
+    background-color: rgba(56, 60, 74, 0.5);
 }
 #clock:hover, #network:hover, #cpu:hover, #battery:hover, #memory:hover {
-    background: rgba(56, 60, 74, 0.8);
+    background-color: rgba(56, 60, 74, 0.8);
 }
       '';   
   };  
