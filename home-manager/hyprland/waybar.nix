@@ -39,7 +39,7 @@ window#waybar {
     border-radius: 10px;
     transition: none;
     color: #ffffff;
-    background: #383c4a4a;
+    background: #383c4a;
 }
       '';   
   };  
