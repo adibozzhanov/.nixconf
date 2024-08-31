@@ -1,7 +1,8 @@
 { pkgs, ...}:
 {
   home.packages = with pkgs; [
-    libsForQt5.partitionmanager
+    xorg.xhost
+    gparted
     font-awesome
     obs-studio
     git-filter-repo
