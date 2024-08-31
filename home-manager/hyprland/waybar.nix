@@ -35,6 +35,19 @@
         min-length = 13;
       };
 
+      "network" = {
+	      interface = "wlp2s0";
+	      format = "{ifname}";
+	      format-wifi = "{essid} ({signalStrength}%) ";
+	      format-ethernet = "{ifname} ";
+	      format-disconnected = "";
+	      tooltip-format = "{ifname}";
+	      tooltip-format-wifi = "{essid} ({signalStrength}%) ";
+	      tooltip-format-ethernet = "{ifname} ";
+	      tooltip-format-disconnected = "Disconnected";
+	      max-length = 5;
+      };
+
       battery = {
         states = {
           warning = 30;
