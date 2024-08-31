@@ -36,10 +36,10 @@
       };
 
       "network" = {
-	      format = "{ifname}";
-	      format-wifi = "{essid} ({signalStrength}%) ";
-	      format-ethernet = "{ifname} ";
-	      format-disconnected = "";
+	      format = "";
+	      format-wifi = "";
+	      format-ethernet = "";
+	      format-disconnected = "";
 	      tooltip-format = "{ifname}";
 	      tooltip-format-wifi = "{essid} ({signalStrength}%) ";
 	      tooltip-format-ethernet = "{ifname} ";
