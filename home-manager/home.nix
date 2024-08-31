@@ -40,6 +40,7 @@
       "code/.keep".source = builtins.toFile "keep" "";
       "videos/.keep".source = builtins.toFile "keep" "";
       "recordings/.keep".source = builtins.toFile "keep" "";
+      "wallpapers/.keep".source = builtins.toFile "keep" "";
     };
     
     pointerCursor = {
