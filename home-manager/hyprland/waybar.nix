@@ -102,6 +102,18 @@ window#waybar {
     background-color: rgba(56, 60, 74, 0.5);
 }
 
+#clock {
+    border-radius: 10px;
+}
+
+#tray {
+    border-radius: 10px 0 0 10px;
+}
+
+#battery {
+    border-radius: 0 10px 10px 0;
+}
+
 #cpu {
     margin-left: 16px;
     border-radius: 10px 0 0 10px;
