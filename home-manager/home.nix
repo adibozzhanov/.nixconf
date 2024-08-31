@@ -50,6 +50,7 @@
     };
     
     packages = with pkgs; [
+      font-awesome
       obs-studio
       git-filter-repo
       git-lfs
