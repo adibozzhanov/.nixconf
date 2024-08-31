@@ -1,8 +1,6 @@
 { pkgs, ...}:
 {
   home.packages = with pkgs; [
-    xorg.xhost
-    gparted
     font-awesome
     obs-studio
     git-filter-repo
