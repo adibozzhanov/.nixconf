@@ -7,6 +7,7 @@
       layer = "top";
       modules-right = [        
         "network"
+        "pulseaudio"
         "battery"
       ];
       modules-center = [
