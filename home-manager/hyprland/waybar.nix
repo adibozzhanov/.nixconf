@@ -41,8 +41,7 @@ window#waybar {
     transition: none;
     color: #ffffff;
     border: 2px solid #383c4a;
-    min-height: 20px;
-    background: transparent;
+    height: 32px;
 }
 
 #network {
