@@ -27,7 +27,11 @@
     font-family: JetBrains Mono;
     font-weight: bold; 
     min-height: 20px;
-}     
+}
+
+window#waybar {
+    background: transparent;
+}
       '';   
   };  
 }
