@@ -7,7 +7,6 @@
       layer = "top";
       modules-right = [
         "tray"
-        "network"
         "pulseaudio"
         "battery"
       ];
@@ -32,18 +31,6 @@
         };
         on-click = "pwvucontrol";
         min-length = 13;
-      };
-
-      "network" = {
-	      format = "";
-	      format-wifi = "";
-	      format-ethernet = "";
-	      format-disconnected = "";
-	      tooltip-format = "{ifname}";
-	      tooltip-format-wifi = "{essid} ({signalStrength}%) ";
-	      tooltip-format-ethernet = "{ifname} ";
-	      tooltip-format-disconnected = "Disconnected";
-	      max-length = 5;
       };
 
       battery = {
@@ -87,7 +74,7 @@ window#waybar {
     background: transparent;
 }
 
-#clock, #network, #cpu, #battery, #memory, #pulseaudio, #tray {
+#clock, #cpu, #battery, #memory, #pulseaudio, #tray {
     margin-top: 8px;
     padding-left: 16px;
     padding-right: 16px;
@@ -124,7 +111,7 @@ window#waybar {
     margin-right: 16px;
 }
 
-#clock:hover, #network:hover, #cpu:hover, #battery:hover, #memory:hover, #pulseaudio:hover, #tray:hover {
+#clock:hover, #cpu:hover, #battery:hover, #memory:hover, #pulseaudio:hover, #tray:hover {
     background-color: rgba(56, 60, 74, 0.8);
 }
       '';   
