@@ -103,7 +103,11 @@ window#waybar {
 }
 
 #cpu {
-    margin-left: 32px;
+    margin-left: 16px;
+}
+
+#battery {
+    margin-right: 16px;
 }
 
 #clock:hover, #network:hover, #cpu:hover, #battery:hover, #memory:hover, #pulseaudio:hover, #tray:hover {
