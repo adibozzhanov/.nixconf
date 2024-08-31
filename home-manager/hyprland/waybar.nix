@@ -89,8 +89,6 @@ window#waybar {
 
 #clock, #network, #cpu, #battery, #memory, #pulseaudio, #tray {
     margin-top: 8px;
-    margin-left: 4px;
-    margin-right: 4px;
     padding-left: 16px;
     padding-right: 16px;
     border-radius: 10px;
