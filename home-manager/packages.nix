@@ -1,6 +1,7 @@
 { pkgs, ...}:
 {
   home.packages = with pkgs; [
+    gnome.gnome-power-manager    
     networkmanagerapplet    
     font-awesome
     obs-studio
