@@ -1,11 +1,10 @@
 { pkgs, ...}:
 {
   home.packages = with pkgs; [
-    gparted
+    libsForQt5.partitionmanager
     font-awesome
     obs-studio
     git-filter-repo
-    git-lfs
     neofetch
     htop
     socat
@@ -19,7 +18,6 @@
     whatsapp-for-linux
     gnome.gnome-system-monitor
     gnome.nautilus
-    gamemode
     spotify
     slurp
     vlc
@@ -28,7 +26,6 @@
     ffmpeg
     loupe
     mpv
-    gamescope
     pwvucontrol
     blueman
     nvtopPackages.full
