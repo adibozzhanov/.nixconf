@@ -5,7 +5,8 @@
     settings = [{
       height = 30;
       layer = "top";
-      modules-right = [        
+      modules-right = [
+        "tray"
         "network"
         "pulseaudio"
         "battery"
@@ -50,10 +51,15 @@
 
       "memory" = {
         interval = 2;
-        format = "{usage}% ";
         min-length = 6;
-      };      
+        format = "{percentage}% ";
+      };
 
+      tray = {
+        icon-size = 16;
+        spacing = 0;
+      };
+      
       "temperature" = {
         critical-threshold = 80;
         format = "{temperatureC}°C {icon}";
@@ -77,7 +83,7 @@ window#waybar {
     background: transparent;
 }
 
-#clock, #network, #cpu, #battery, #memory, #temperature, #pulseaudio {
+#clock, #network, #cpu, #battery, #memory, #temperature, #pulseaudio, #tray {
     margin-top: 8px;
     margin-left: 4px;
     margin-right: 4px;
@@ -91,7 +97,7 @@ window#waybar {
     transition-duration: .5s;
     background-color: rgba(56, 60, 74, 0.5);
 }
-#clock:hover, #network:hover, #cpu:hover, #battery:hover, #memory:hover, #temperature:hover, #pulseaudio:hover {
+#clock:hover, #network:hover, #cpu:hover, #battery:hover, #memory:hover, #temperature:hover, #pulseaudio:hover, #tray:hover {
     background-color: rgba(56, 60, 74, 0.8);
 }
       '';   
