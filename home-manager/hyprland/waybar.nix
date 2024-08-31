@@ -29,7 +29,9 @@
     min-height: 0px;
 }
 
-window#waybar {    
+window#waybar {
+    padding-left: 8px;
+    padding-right: 8px;
     background: transparent;
 }
 
