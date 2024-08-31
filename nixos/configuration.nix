@@ -54,7 +54,7 @@
     hyprland
     where-is-my-sddm-theme
     home-manager
-    udisks
+    udisks2
     gnome.gnome-disk-utility    
   ];
 
