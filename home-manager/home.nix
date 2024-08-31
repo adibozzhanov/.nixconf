@@ -24,8 +24,8 @@
     enable = true;
 
     theme = {
-      package = pkgs.orchis-theme;
-      name = "Orchis-Purple";
+      package = pkgs.layan-gtk-theme;
+      name = "Layan-Dark";
     };
 
     iconTheme = {
