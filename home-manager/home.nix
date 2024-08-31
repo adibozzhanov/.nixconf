@@ -28,11 +28,6 @@
       name = "Layan-Dark";
     };
 
-    iconTheme = {
-      package = pkgs.gnome.adwaita-icon-theme;
-      name = "Adwaita";
-    };
-
     font = {
       name = "Sans";
       size = 11;
