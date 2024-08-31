@@ -2,6 +2,7 @@
 {
   home.packages = with pkgs; [
     udisks
+    gptfdisk
     gnome.gnome-disk-utility
     font-awesome
     obs-studio
