@@ -1,0 +1,36 @@
+{ pkgs, ...}:
+{
+  home.packages = with pkgs; [
+    gparted
+    font-awesome
+    obs-studio
+    git-filter-repo
+    git-lfs
+    neofetch
+    htop
+    socat
+    python3
+    firefox
+    telegram-desktop
+    webcord
+    tree
+    nodejs_22
+    grc
+    whatsapp-for-linux
+    gnome.gnome-system-monitor
+    gnome.nautilus
+    gamemode
+    spotify
+    slurp
+    vlc
+    wf-recorder
+    bash
+    ffmpeg
+    loupe
+    mpv
+    gamescope
+    pwvucontrol
+    blueman
+    nvtopPackages.full
+  ];
+}
