@@ -30,8 +30,6 @@
 }
 
 window#waybar {
-    padding-left: 8px;
-    padding-right: 8px;
     background: transparent;
 }
 
@@ -56,6 +54,7 @@ window#waybar {
 }
 
 #cpu {
+    margin-left: 8px;
     margin-top: 8px;
     padding-left: 16px;
     padding-right: 16px;
@@ -66,6 +65,7 @@ window#waybar {
 }
 
 #battery {
+    margin-right: 8px;
     margin-top: 8px;
     padding-left: 16px;
     padding-right: 16px;
