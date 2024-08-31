@@ -41,7 +41,7 @@ window#waybar {
     transition: none;
     color: #ffffff;
     border: 2px solid #383c4a;
-    min-height: 16px;
+    min-height: 20px;
     background: transparent;
 }
 
