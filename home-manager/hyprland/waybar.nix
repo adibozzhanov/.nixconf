@@ -40,8 +40,8 @@ window#waybar {
     border-radius: 10px;
     transition: none;
     color: #ffffff;
-    background: #383c4a;
-    opacity: 0.5;
+    border: 3px solid #383c4a;
+    background: transparent;
 }
 
 #network {
