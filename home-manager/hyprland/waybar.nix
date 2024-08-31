@@ -87,10 +87,6 @@ window#waybar {
     background: transparent;
 }
 
-#cpu {
-    margin-left: 32px;
-}
-
 #clock, #network, #cpu, #battery, #memory, #pulseaudio, #tray {
     margin-top: 8px;
     margin-left: 4px;
@@ -105,6 +101,11 @@ window#waybar {
     transition-duration: .5s;
     background-color: rgba(56, 60, 74, 0.5);
 }
+
+#cpu {
+    margin-left: 32px;
+}
+
 #clock:hover, #network:hover, #cpu:hover, #battery:hover, #memory:hover, #pulseaudio:hover, #tray:hover {
     background-color: rgba(56, 60, 74, 0.8);
 }
