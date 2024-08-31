@@ -25,7 +25,7 @@
 
     theme = {
       package = pkgs.layan-gtk-theme;
-      name = "Layan-Dark";
+      name = "Layan-Dark-Solid";
     };
 
     font = {
