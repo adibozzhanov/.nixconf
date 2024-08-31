@@ -31,11 +31,40 @@
 
 window#waybar {    
     background: transparent;
-    padding-top: 5px;
-    border-top: 2px dashed #a678d3;
 }
 
-#clock {   
+#clock {
+    margin-top: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 10px;
+    transition: none;
+    color: #ffffff;
+    background: #383c4a;
+}
+
+#network {
+    margin-top: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 10px;
+    transition: none;
+    color: #ffffff;
+    background: #383c4a;
+}
+
+#cpu {
+    margin-top: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 10px;
+    transition: none;
+    color: #ffffff;
+    background: #383c4a;
+}
+
+#memory {
+    margin-top: 8px;
     padding-left: 16px;
     padding-right: 16px;
     border-radius: 10px;
