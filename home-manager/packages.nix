@@ -1,7 +1,7 @@
 { pkgs, ...}:
 {
   home.packages = with pkgs; [
-    gnome.gnome-nettool
+    networkmanagerapplet
     font-awesome
     obs-studio
     git-filter-repo

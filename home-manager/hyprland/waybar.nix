@@ -87,9 +87,6 @@ window#waybar {
     background: transparent;
 }
 
-
-
-
 #clock, #network, #cpu, #battery, #memory, #pulseaudio, #tray {
     margin-top: 8px;
     padding-left: 16px;
