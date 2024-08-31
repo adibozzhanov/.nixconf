@@ -62,7 +62,7 @@ window#waybar {
     transition-duration: .5s;
     background-color: rgba(56, 60, 74, 0.5);
 }
-#clock:hover, #network:hover, #cpu:hover, #battery:hover, #memory:hover {
+#clock:hover, #network:hover, #cpu:hover, #battery:hover, #memory:hover, #temperature:hover {
     background-color: rgba(56, 60, 74, 0.8);
 }
       '';   
