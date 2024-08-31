@@ -26,6 +26,11 @@
       name = "Layan-Dark-Solid";
     };
 
+    iconTheme = {
+      package = pkgs.reversal-icon-theme;
+      name = "Reversal-blue";
+    };
+
     font = {
       name = "Sans";
       size = 11;
