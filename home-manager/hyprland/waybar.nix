@@ -40,7 +40,8 @@ window#waybar {
     border-radius: 10px;
     transition: none;
     color: #ffffff;
-    border: 3px solid #383c4a;
+    border: 2px solid #383c4a;
+    min-height: 16px;
     background: transparent;
 }
 
