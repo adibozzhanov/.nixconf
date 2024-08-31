@@ -16,22 +16,23 @@
         "cpu"        
         "memory"
         "temperature"
-      ];      
-    }];
+      ];
 
-    "cpu" = {
-      interval = 2;
-      format = "{usage}% ";
-      min-length = 6;
-    };
+      
+      "cpu" = {
+        interval = 2;
+        format = "{usage}% ";
+        min-length = 6;
+      };
 
-    "temperature" = {
+      "temperature" = {
         critical-threshold = 80;
         format = "{temperatureC}°C {icon}";
         format-icons = ["" "" "" "" ""];
         tooltip = false;
-    };
-
+      };
+      
+    }];
 
     style =
       ''
