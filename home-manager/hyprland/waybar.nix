@@ -41,7 +41,7 @@ window#waybar {
     transition: none;
     color: #ffffff;
     border: 2px solid #383c4a;
-    height: 32px;
+    background: rgba(56, 60, 74, 0.6);
 }
 
 #network {
