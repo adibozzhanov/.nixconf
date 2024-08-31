@@ -19,7 +19,7 @@
   networking.hostName = "hestia";
   networking.networkmanager.enable = true;
 
-  time.timeZone = "Europe/London";
+  time.timeZone = "Europe/Kiev";
   console = {
     font = "Lat2-Terminus16";
     keyMap = "us";
