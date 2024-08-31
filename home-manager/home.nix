@@ -51,6 +51,7 @@
     };
     
     packages = with pkgs; [
+      gparted
       font-awesome
       obs-studio
       git-filter-repo
