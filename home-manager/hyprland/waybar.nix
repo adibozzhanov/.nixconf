@@ -30,7 +30,7 @@
         format-icons = {
           default = ["" "" ""];
         };
-        on-click = "pavucontrol";
+        on-click = "pwvucontrol";
         min-length = 13;
       };
 
@@ -39,11 +39,9 @@
           warning = 30;
           critical = 15;
         };
-        format = "{capacity}% {icon}";
+        format = "{capacity}% 🔋";
         format-charging = "{capacity}% ";
         format-plugged = "{capacity}% ";
-        format-alt = "{time} {icon}";
-        format-icons = ["" "" "" "" "" "" "" "" "" ""];
       };
       
       "cpu" = {
