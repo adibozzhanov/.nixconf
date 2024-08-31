@@ -28,12 +28,6 @@
         format-source = "{volume}% ";
         format-source-muted = "";
         format-icons = {
-          headphone = "";
-          hands-free = "";
-          headset = "";
-          phone = "";
-          portable = "";
-          car = "";
           default = ["" "" ""];
         };
         on-click = "pavucontrol";
