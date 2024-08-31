@@ -94,7 +94,6 @@ window#waybar {
     margin-top: 8px;
     padding-left: 16px;
     padding-right: 16px;
-    border-radius: 10px;
     transition: none;
     color: #ffffff;
     min-height: 24px;
