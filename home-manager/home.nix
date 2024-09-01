@@ -29,8 +29,8 @@
     };
 
     theme = {
-      package = pkgs.layan-gtk-theme;
-      name = "Layan-Dark-Solid";
+      package = pkgs.nordic;
+      name = "Nordic-darker-standard-buttons";
     };
 
     iconTheme = {
