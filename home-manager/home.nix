@@ -17,7 +17,7 @@
   dconf.settings = {
     "org/gnome/desktop/interface" = {
       gtk-theme = "Nordic-darker-standard-buttons";
-      icon-theme = "kora-grey-1-6-6"
+      icon-theme = "kora-grey-1-6-6";
       color-scheme = "prefer-dark";
     };
   };
