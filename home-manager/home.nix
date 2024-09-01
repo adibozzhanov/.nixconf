@@ -1,12 +1,4 @@
 { config, pkgs, ... }: {
-  
-  imports = [
-    ./fish.nix
-    ./hyprland/hyprland.nix
-    ./kitty.nix
-    ./git.nix
-    ./packages.nix
-  ];
 
   nixpkgs = {
     config = {
@@ -64,5 +56,13 @@
       name = "Sans";
       size = 11;
     };
-  }; 
+  };
+
+  imports = [
+    ./fish.nix
+    ./hyprland/hyprland.nix
+    ./kitty.nix
+    ./git.nix
+    ./packages.nix
+  ];  
 }
