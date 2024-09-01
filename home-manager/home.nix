@@ -34,8 +34,8 @@
     };
 
     iconTheme = {
-      package = pkgs.reversal-icon-theme;
-      name = "Reversal-black";
+      package = pkgs.kora-icon-theme;
+      name = "kora-grey-1-6-6";
     };
 
     font = {
