@@ -1,6 +1,7 @@
 { pkgs, ...}:
 {
   home.packages = with pkgs; [
+    zoom-us
     networkmanagerapplet    
     font-awesome
     obs-studio
