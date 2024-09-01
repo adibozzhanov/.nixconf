@@ -14,6 +14,13 @@
     };
   };
 
+  dconf.settings = {
+    "org/gnome/desktop/interface" = {
+      gtk-theme = "Layan-Dark-Solid";
+      color-scheme = "prefer-dark";
+    };
+  };
+
   gtk = {
     enable = true;
 
