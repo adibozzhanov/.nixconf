@@ -35,7 +35,7 @@
 
     iconTheme = {
       package = pkgs.reversal-icon-theme;
-      name = "Reversal-blue";
+      name = "Reversal-black";
     };
 
     font = {
