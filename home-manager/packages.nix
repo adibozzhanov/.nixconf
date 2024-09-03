@@ -1,6 +1,7 @@
 { pkgs, ...}:
 {
   home.packages = with pkgs; [
+    wineWowPackages.waylandFull
     lutris
     zoom-us
     networkmanagerapplet    
