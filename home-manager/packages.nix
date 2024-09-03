@@ -1,6 +1,7 @@
 { pkgs, ...}:
 {
   home.packages = with pkgs; [
+    lutris
     zoom-us
     networkmanagerapplet    
     font-awesome
