@@ -1,12 +1,12 @@
-{ self, config, pkgs, ...}:
+{ self, inputs, config, pkgs, ...}:
 {
   imports = [
-    self.inputs.nur.repos.rycee.hmModules.emacs-init
-    self.inputs.nur.repos.rycee.hmModules.emacs-notmuch
+    inputs.nur.repos.rycee.hmModules.emacs-init
+    inputs.nur.repos.rycee.hmModules.emacs-notmuch
   ];
   
   nixpkgs.overlays = [
-    (import self.inputs.emacs-overlay)
+    (import inputs.emacs-overlay)
   ];
   
   programs.emacs.init = {
@@ -15,5 +15,4 @@
     recommendedGcSettings = true;
     usePackageVerbose = false;
   };
-
 }
