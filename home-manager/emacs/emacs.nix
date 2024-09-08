@@ -1,6 +1,10 @@
 { pkgs, ...}:
 {
 
+  import = [
+    ./visual.nix
+  ];
+  
   services.emacs = {
     enable = true;
     package = pkgs.emacs;
