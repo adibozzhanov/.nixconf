@@ -8,11 +8,7 @@
 
   programs.emacs = {
     enable = true;
-    package = pkgs.emacs;
-
-    init = {
-      enable = true;
-      recommendedGcSettings = true;
-    };
+    package = pkgs.emacs;    
+    recommendedGcSettings = true;
   };
 }
