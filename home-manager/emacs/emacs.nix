@@ -1,6 +1,5 @@
-{...}:
 {  
-   nurr.repos.rycee.hmModules.emacs.init = {
+   nur.repos.rycee.hmModules.emacs.init = {
      enable = true;
      packageQuickstart = false;
      recommendedGcSettings = true;
