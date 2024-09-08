@@ -1,8 +1,8 @@
 { self, inputs, config, pkgs, ...}:
 {
   imports = [
-    inputs.nur.repos.rycee.hmModules.emacs-init
-    inputs.nur.repos.rycee.hmModules.emacs-notmuch
+    self.inputs.nur.repos.rycee.hmModules.emacs-init
+    self.inputs.nur.repos.rycee.hmModules.emacs-notmuch
   ];
   
   nixpkgs.overlays = [
