@@ -1,8 +1,4 @@
 { self, config, pkgs, ...}:
-
-let
-  pcfg = config.programs.emacs.init.usePackage;
-in   
 {
 
   nixpkgs.overlays = [
