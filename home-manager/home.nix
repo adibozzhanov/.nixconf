@@ -1,5 +1,16 @@
 { config, inputs, pkgs, ... }:
-{  
+{
+
+  imports = [
+    inputs.nur.hmModules.nur
+    ./fish.nix
+    ./hyprland/hyprland.nix
+    ./kitty.nix
+    ./git.nix
+    ./packages.nix
+    ./emacs/emacs.nix
+  ];
+
   nixpkgs = {
     config = {
       allowUnfree = true;
@@ -59,14 +70,4 @@
     };
 
   };
-
-  imports = [
-    inputs.nur.hmModules.nur
-    ./fish.nix
-    ./hyprland/hyprland.nix
-    ./kitty.nix
-    ./git.nix
-    ./packages.nix
-    ./emacs/emacs.nix
-  ];  
 }
