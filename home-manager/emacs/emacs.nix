@@ -1,4 +1,4 @@
-{ self, pkgs, ...}:
+{ self, config, pkgs, ...}:
 
 let
   nurNoPkgs =
