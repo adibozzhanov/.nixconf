@@ -1,7 +1,11 @@
-{ inputs, ...}:
+{ inputs, nur, ...}:
+
+let
+  nurNoPkgs = import nur { pkgs = null; nurpkgs = pkgs; };
+in  
 {
    imports = [
-     nur.repos.rycee.hmModules.emacs-init
+     nurNoPkgs.repos.rycee.hmModules.emacs-init
    ];
    
    nixpkgs.overlays = [ (import inputs.emacs-overlay) ];
