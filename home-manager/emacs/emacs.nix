@@ -9,7 +9,7 @@
 
   programs.emacsWithPackagesFromUsePackage = {
     enable = true;
-    package = pkgs.emacs-git;
+    package = pkgs.emacs;
     alwaysEnsure = true;
     
     extraConfig = ''
