@@ -53,9 +53,11 @@
     };
 
     font = {
-      name = "Sans";
-      size = 11;
+      package = (pkgs.nerdfonts.override { fonts = [ "Mononoki" ]; });
+      name = "Mononoki Nerd Font Regular";
+      size = 12;
     };
+
   };
 
   imports = [
