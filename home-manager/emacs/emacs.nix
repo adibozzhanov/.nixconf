@@ -3,7 +3,9 @@
    imports = [
      inputs.nur.hmModules.nur.repos.rycee.hmModules.emacs-init
    ];
+   
    nixpkgs.overlays = [ (import inputs.emacs-overlay) ];
+   
    programs.emacs.init = {
      enable = true;
      packageQuickstart = false;
