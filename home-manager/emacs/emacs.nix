@@ -8,7 +8,6 @@ in
      nurNoPkgs.repos.rycee.hmModules.emacs-init
    ];
    
-   nixpkgs.overlays = [ (import inputs.emacs-overlay) ];
    
    programs.emacs.init = {
      enable = true;
