@@ -7,9 +7,10 @@
     defaultEditor = true;
   };
 
-  programs.emacs = {
+  programs.emacsWithPackagesFromUsePackage = {
     enable = true;
-    package = pkgs.emacs;
+    package = pkgs.emacs-git;
+    alwaysEnsure = true;
     
     extraConfig = ''
     (setq package-archives nil)
@@ -21,6 +22,6 @@
     (setq display-line-numbers-type 'relative)
     (show-paren-mode)
     (set-default 'truncate-lines t)
-    ''; 
+    '';
   };
 }
