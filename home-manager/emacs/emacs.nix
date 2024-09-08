@@ -1,17 +1,24 @@
-{ pkgs, ...}:
+{ self, pkgs, ...}:
 
 let
-   use-emacs = pkgs.emacsWithPackagesFromUsePackage {
-       config = ./init.el;
-       defaultInitFile = true;
-       alwaysEnsure = true;
-   };
+  nurNoPkgs =
+    import (import ../nix/sources.nix).nur { pkgs = throw "nixpkgs eval"; };
+  pcfg = config.programs.emacs.init.usePackage;
 in   
 {
-  programs.emacs = {
+  imports = [
+    nurNoPkgs.repos.rycee.hmModules.emacs-init
+    nurNoPkgs.repos.rycee.hmModules.emacs-notmuch
+  ];
+
+  nixpkgs.overlays = [ (import self.inputs.emacs-overlay) ];
+
+  programs.emacs.init = {
     enable = true;
-    package = use-emacs;
-  };
+    packageQuickstart = false;
+    recommendedGcSettings = true;
+    usePackageVerbose = false;
+  }
 
   services.emacs = {
     enable = true;
