@@ -1,8 +1,13 @@
 { self, inputs, config, pkgs, ...}:
+
+let
+  myNur =
+    import (inputs.nur)
+in
 {
   imports = [
-    self.inputs.nur.repos.rycee.hmModules.emacs-init
-    self.inputs.nur.repos.rycee.hmModules.emacs-notmuch
+    myNur.repos.rycee.hmModules.emacs-init
+    myNur.repos.rycee.hmModules.emacs-notmuch
   ];
   
   nixpkgs.overlays = [
