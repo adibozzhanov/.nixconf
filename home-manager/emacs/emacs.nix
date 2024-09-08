@@ -4,7 +4,7 @@
      self.inputs.nur.hmModules.nur.repos.rycee.hmModules.emacs-init
    ];
    
-   nixpkgs.overlays = [ (import inputs.emacs-overlay) ];
+   nixpkgs.overlays = [ (import self.inputs.emacs-overlay) ];
    
    programs.emacs.init = {
      enable = true;
