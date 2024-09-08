@@ -34,7 +34,6 @@
           nixos-hardware.nixosModules.asus-zephyrus-ga402
         ];
       };
-     
       
       homeConfigurations.bzv = home-manager.lib.homeManagerConfiguration {
         pkgs = nixpkgs.legacyPackages.${system};
@@ -42,9 +41,6 @@
           inherit inputs;
         };        
         modules = [
-	  home-manager.nixosModules.home-manager {
-            nixpkgs.overlays = [ nur.overlay ];
-	  }
           ./home-manager/home.nix
         ];
       };
