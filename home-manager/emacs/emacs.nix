@@ -18,7 +18,7 @@ in
     packageQuickstart = false;
     recommendedGcSettings = true;
     usePackageVerbose = false;
-  }
+  };
 
   services.emacs = {
     enable = true;
