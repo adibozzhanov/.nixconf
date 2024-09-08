@@ -1,7 +1,6 @@
 { config, inputs, pkgs, ... }:
 {
   imports = [
-    inputs.nur.hmModules.nur    
     ./fish.nix
     ./hyprland/hyprland.nix
     ./kitty.nix
@@ -11,6 +10,7 @@
   ];
 
   nixpkgs = {
+    overlays = builtins.attrValues outputs.overlays;
     config = {
       allowUnfree = true;
     };
