@@ -1,7 +1,7 @@
 { config, inputs, pkgs, ... }:
 {
   imports = [
-    inputs.nur.hmModules.nur
+    inputs.nur.hmModules.nur    
     ./fish.nix
     ./hyprland/hyprland.nix
     ./kitty.nix
