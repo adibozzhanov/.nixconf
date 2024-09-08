@@ -13,6 +13,6 @@
     init = {
       enable = true;
       recommendedGcSettings = true;
-    }
+    };
   };
 }
