@@ -1,12 +1,14 @@
-{ config, pkgs, ... }: {
-
+{ config, inputs, pkgs, ... }:
+let
+  nurNoPkgs = import inputs.nur {pkgs = null; nurpkgs = pkgs};
+{  
   nixpkgs = {
     config = {
       allowUnfree = true;
     };
   };
-
-  home = {
+  
+  home = {    
     username = "bzv";
     homeDirectory = "/home/bzv";
     file = {
@@ -61,6 +63,7 @@
   };
 
   imports = [
+    nurNoPkgs.repos.rycee.hmModules.emacs-init
     ./fish.nix
     ./hyprland/hyprland.nix
     ./kitty.nix
