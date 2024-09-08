@@ -5,7 +5,10 @@ let
 in   
 {
 
-  nixpkgs.overlays = [ (import self.inputs.emacs-overlay), (import self.inputs.nur) ];
+  nixpkgs.overlays = [
+    (import self.inputs.emacs-overlay)
+    (import self.inputs.nur)
+  ];
   
 
 
