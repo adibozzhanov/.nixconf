@@ -1,4 +1,4 @@
-{ self, inputs, config, pkgs, ...}:
+{ inputs, config, pkgs, ...}:
 
 let
   myNur = import inputs.nur;
