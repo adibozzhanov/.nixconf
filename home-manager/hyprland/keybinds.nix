@@ -18,7 +18,7 @@
       "$mod SHIFT, left, exec, echo 'playlist-prev' | socat - /tmp/mpv-socket"
       "$mod, R, exec, $scriptsDir/screen-record.sh"
       "$mod, T, exec, $terminal"
-      "$mod SHIFT, period, exec, kitty emacs -nw ~/.nixconf"
+      "$mod SHIFT, period, exec, emacsclient ~/.nixconf"
       "$mod, SPACE, exec, rofi -show drun"
       "$mod, Q, killactive"
       "$mod SHIFT, F, togglefloating"
