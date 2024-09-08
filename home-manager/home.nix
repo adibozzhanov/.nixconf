@@ -1,6 +1,5 @@
 { config, inputs, pkgs, ... }:
 {
-
   imports = [
     inputs.nur.hmModules.nur
     ./fish.nix
