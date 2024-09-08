@@ -44,7 +44,7 @@
         modules = [
 	  home-manager.nixosModules.home-manager {
             nixpkgs.overlays = [ nur.overlay ];
-	  };
+	  }
           ./home-manager/home.nix
         ];
       };
