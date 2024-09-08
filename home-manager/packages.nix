@@ -1,6 +1,7 @@
 { pkgs, ...}:
 {
   home.packages = with pkgs; [
+    google-fonts
     wineWowPackages.waylandFull
     lutris
     zoom-us
