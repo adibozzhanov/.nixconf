@@ -1,7 +1,7 @@
-{ inputs, nur, ...}:
+{ inputs, ...}:
 {
    imports = [
-     nur.repos.rycee.hmModules.emacs-init
+     inputs.nur.hmModules.nur.repos.rycee.hmModules.emacs-init
    ];
    nixpkgs.overlays = [ (import inputs.emacs-overlay) ];
    programs.emacs.init = {
