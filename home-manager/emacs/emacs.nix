@@ -1,4 +1,4 @@
-{ inputs, nur, ...}:
+{ inputs, nur, pkgs, ...}:
 
 let
   nurNoPkgs = import nur { pkgs = null; nurpkgs = pkgs; };
