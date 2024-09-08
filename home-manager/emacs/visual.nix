@@ -7,5 +7,11 @@
     (setq display-line-numbers-type 'relative)
     (show-paren-mode)
     (set-default 'truncate-lines t)
+    
+    (use-package monokai-pro-theme
+      :ensure t
+      :config
+      (load-theme 'monokai-pro-machine t))
+
   '';
 }
