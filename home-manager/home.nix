@@ -64,7 +64,6 @@ in
   };
 
   imports = [
-    nurNoPkgs.repos.rycee.hmModules.emacs-init
     ./fish.nix
     ./hyprland/hyprland.nix
     ./kitty.nix
