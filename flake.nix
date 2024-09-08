@@ -9,7 +9,7 @@
     hyprland.url = "git+https://github.com/hyprwm/Hyprland/?submodules=1";
 
     nur = {
-      url = "github:nix-community/NUR";
+      url = "github:nix-community/nur";
     };
 
     emacs-overlay = {
