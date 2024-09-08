@@ -1,16 +1,13 @@
 { self, config, pkgs, ...}:
 
 let
-  nurNoPkgs = self.inputs.nur;
   pcfg = config.programs.emacs.init.usePackage;
 in   
 {
-  imports = [
-    nurNoPkgs.repos.rycee.hmModules.emacs-init
-    nurNoPkgs.repos.rycee.hmModules.emacs-notmuch
-  ];
 
-  nixpkgs.overlays = [ (import self.inputs.emacs-overlay) ];
+  nixpkgs.overlays = [ (import self.inputs.emacs-overlay), (import self.inputs.nur) ];
+  
+
 
   programs.emacs.init = {
     enable = true;
