@@ -1,7 +1,7 @@
 { pkgs, ...}:
 {
 
-  import = [
+  imports = [
     ./visual.nix
   ];
   
