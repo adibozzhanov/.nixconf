@@ -7,7 +7,7 @@
     defaultEditor = true;
   };
 
-  programs.emacsWithPackagesFromUsePackage = {
+  programs.emacs.init = {
     enable = true;
     package = pkgs.emacs;
     alwaysEnsure = true;
