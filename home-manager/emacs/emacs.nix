@@ -10,8 +10,6 @@
      (scroll-bar-mode -1) ; Bye scroll bar
      (menu-bar-mode -1) ; Bye menu bar
 
-     (require 'monokai-pro-theme)
-     (load-theme 'monokai-pro-theme t)
      '';
    };
 }
