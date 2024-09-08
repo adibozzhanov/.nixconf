@@ -1,4 +1,4 @@
-{ nur, ...}:
+{ inputs, nur, ...}:
 {
    imports = [
      nur.hmModules.nur.repos.rycee.hmModules.emacs-init
