@@ -66,5 +66,6 @@
     ./kitty.nix
     ./git.nix
     ./packages.nix
+    ./emacs.nix
   ];  
 }
