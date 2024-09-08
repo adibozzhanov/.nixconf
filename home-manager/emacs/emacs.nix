@@ -1,10 +1,10 @@
-{ self, ...}:
+{ nur, ...}:
 {
    imports = [
-     self.inputs.nur.hmModules.nur.repos.rycee.hmModules.emacs-init
+     nur.hmModules.nur.repos.rycee.hmModules.emacs-init
    ];
    
-   nixpkgs.overlays = [ (import self.inputs.emacs-overlay) ];
+   nixpkgs.overlays = [ (import inputs.emacs-overlay) ];
    
    programs.emacs.init = {
      enable = true;
