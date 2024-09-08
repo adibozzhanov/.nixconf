@@ -1,6 +1,7 @@
 { config, inputs, pkgs, ... }:
 let
   nurNoPkgs = import inputs.nur {pkgs = null; nurpkgs = pkgs};
+in  
 {  
   nixpkgs = {
     config = {
