@@ -1,7 +1,7 @@
 { self, inputs, config, pkgs, ...}:
 
 let
-  myNur = import (inputs.nur);
+  myNur = import (self.inputs.nur);
 in
 {
   imports = [
