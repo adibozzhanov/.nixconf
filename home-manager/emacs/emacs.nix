@@ -1,8 +1,7 @@
 { self, config, pkgs, ...}:
 
 let
-  nurNoPkgs =
-    import (import ../nix/sources.nix).nur { pkgs = throw "nixpkgs eval"; };
+  nurNoPkgs = self.inputs.nur;
   pcfg = config.programs.emacs.init.usePackage;
 in   
 {
