@@ -1,7 +1,4 @@
 { config, inputs, pkgs, ... }:
-let
-  nurNoPkgs = import inputs.nur { pkgs = null; nurpkgs = pkgs; };
-in  
 {  
   nixpkgs = {
     config = {
@@ -64,6 +61,7 @@ in
   };
 
   imports = [
+    inputs.nur.hmModules.nur
     ./fish.nix
     ./hyprland/hyprland.nix
     ./kitty.nix
