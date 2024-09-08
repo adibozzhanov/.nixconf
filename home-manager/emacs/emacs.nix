@@ -1,4 +1,6 @@
-{  
+{ inputs, ...}:
+{
+   nixpkgs.overlays = [ (import inputs.emacs-overlay) ];
    nur.repos.rycee.hmModules.emacs.init = {
      enable = true;
      packageQuickstart = false;
