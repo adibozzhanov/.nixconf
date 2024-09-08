@@ -1,7 +1,7 @@
 { inputs, config, pkgs, ...}:
 
 let
-  nurr = import inputs.nur {pkgs = null; nurpkgs = pkgs};
+  nurr = import inputs.nur { pkgs = null; nurpkgs = pkgs; };
 in
 {
   imports = [
