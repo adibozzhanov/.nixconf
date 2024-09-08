@@ -9,6 +9,6 @@
   programs.emacs = {
     enable = true;
     package = pkgs.emacs;    
-    recommendedGcSettings = true;
+
   };
 }
