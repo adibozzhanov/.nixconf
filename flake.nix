@@ -34,7 +34,9 @@
           nixos-hardware.nixosModules.asus-zephyrus-ga402
         ];
       };
-
+      home-manager.nixosModules.home-manager {
+        nixpkgs.overlays = [ nur.overlay ];
+      };
       homeConfigurations.bzv = home-manager.lib.homeManagerConfiguration {
         pkgs = nixpkgs.legacyPackages.${system};
         extraSpecialArgs = {
