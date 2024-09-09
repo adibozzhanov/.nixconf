@@ -1,11 +1,12 @@
 { pkgs, ...}:
 {
   home.packages = with pkgs; [
+    pyright
     google-fonts
     wineWowPackages.waylandFull
     lutris
     zoom-us
-    networkmanagerapplet    
+    networkmanagerapplet
     font-awesome
     obs-studio
     git-filter-repo
