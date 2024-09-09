@@ -10,7 +10,7 @@
   };
 
   home.file.".emacs.d" = {
-    source = /lispConf;
+    source = ./lispConf;
     recursive = true;
   };  
 }
