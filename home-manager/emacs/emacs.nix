@@ -4,7 +4,10 @@
     enable = true;
   };
 
-  home.file.".emacs.d".source = ./.emacs.d;
+  home.file.".emacs.d" = {
+    source = ./.emacs.d;
+    recursive = true;
+  };
 
   programs.emacs = {
     enable = true;
