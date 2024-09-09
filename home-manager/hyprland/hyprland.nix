@@ -23,15 +23,15 @@
     swaynotificationcenter
     qt5.qtwayland
     nwg-displays
-    mpvpaper    
+    mpvpaper
     libsForQt5.polkit-kde-agent
   ];
-  
+
   wayland.windowManager.hyprland.settings = {
     input = {
       kb_layout = "us";
       follow_mouse = "1";
-      sensitivity = "0"; 
+      sensitivity = "0";
       touchpad = {
         natural_scroll = "true";
       };

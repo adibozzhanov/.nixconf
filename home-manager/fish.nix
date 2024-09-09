@@ -13,7 +13,7 @@
       econf = "emacsclient ~/.nixconf";
       confpush = "pushd ~/.nixconf && git push && popd";
     };
-    
+
     plugins = [
       { name = "grc"; src = pkgs.fishPlugins.grc.src; }
       { name = "hydro"; src = pkgs.fishPlugins.hydro.src; }
