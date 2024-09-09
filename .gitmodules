@@ -1,0 +1,3 @@
+[submodule "home-manager/emacs/lispConf"]
+	path = home-manager/emacs/lispConf
+	url = git@github.com:adibozzhanov/.emacs.d.git
