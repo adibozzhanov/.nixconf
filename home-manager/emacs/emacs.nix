@@ -9,8 +9,8 @@
     package = pkgs.emacs;
   };
 
-  home.file."~/.emacs.d" = {
+  home.file.".emacs.d" = {
     source = ./lispConf;
     recursive = true;
-  };
+  };  
 }
