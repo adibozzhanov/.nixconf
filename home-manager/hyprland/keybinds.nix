@@ -1,16 +1,16 @@
 {
   wayland.windowManager.hyprland.settings = {
-    
+
     gestures = {
       workspace_swipe = "false";
     };
-   
+
     bindm = [
       # mouse
       "$mod, mouse:272, movewindow"
       "$mod, mouse:273, resizewindow"
     ];
-    
+
     bind = [
       # various
       ", Print, exec, hyprshot -m region -o ~/screenshots"
@@ -18,6 +18,7 @@
       "$mod SHIFT, left, exec, echo 'playlist-prev' | socat - /tmp/mpv-socket"
       "$mod, R, exec, $scriptsDir/screen-record.sh"
       "$mod, T, exec, $terminal"
+      "$mod SHIFT, comma, exec, emacsclient -c"
       "$mod SHIFT, period, exec, emacsclient -c ~/.nixconf"
       "$mod, SPACE, exec, rofi -show drun"
       "$mod, Q, killactive"
@@ -36,7 +37,7 @@
       "$mod, F, movefocus, r"
       "$mod, P, movefocus, u"
       "$mod, N, movefocus, d"
-      
+
       # workspace bindings
       "$mod, 1, workspace, 1"
       "$mod, 2, workspace, 2"
