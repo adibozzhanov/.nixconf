@@ -12,5 +12,5 @@
   home.file.".emacs.d" = {
     source = ./lispConf;
     recursive = true;
-  };  
+  };
 }
