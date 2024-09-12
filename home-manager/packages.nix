@@ -1,6 +1,7 @@
 { pkgs, ...}:
 {
   home.packages = with pkgs; [
+    libsForQt5.kolourpaint
     pyright
     google-fonts
     wineWowPackages.waylandFull
