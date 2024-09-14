@@ -20,7 +20,7 @@
     in {
       nixosConfigurations.hestia = nixpkgs.lib.nixosSystem {
         inherit system;
-        specialArgs = { inherit inputs; }
+        specialArgs = { inherit inputs; };
         modules = [
           nixos-hardware.nixosModules.asus-zephyrus-ga402
           ./nixos/configuration.nix
