@@ -2,20 +2,20 @@
 # your system. Help is available in the configuration.nix(5) man page, on
 # https://search.nixos.org/options and in the NixOS manual (`nixos-help`).
 
-{ config, lib, pkgs, ... }:
+{ config, lib, pkgs, inputs, ... }:
 
 {
   imports =
     [
+      inputs.hyprland.nixosModules.default
       ./hardware-configuration.nix
       ./steam.nix
       ./amd.nix
     ];
-  
+  programs.hyprland.enable = true;
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
-  programs.hyprland.enable = true;
-  
+
   networking.hostName = "hestia";
   networking.networkmanager.enable = true;
 
@@ -29,7 +29,7 @@
   services.displayManager.sddm.enable = true;
   services.displayManager.sddm.wayland.enable = true;
   services.displayManager.sddm.theme = "where_is_my_sddm_theme";
-  
+
   nix.settings.experimental-features = ["nix-command" "flakes"];
   services.printing.enable = true;
   nixpkgs.config.allowUnfree = true;
@@ -64,9 +64,8 @@
 
   hardware.bluetooth = {
     enable = true;
-    powerOnBoot = true;    
+    powerOnBoot = true;
   };
-  
+
   system.stateVersion = "24.05";
 }
-
