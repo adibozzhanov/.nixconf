@@ -33,6 +33,7 @@
           inherit inputs;
         };
         modules = [
+          { wayland.windowManager.hyprland.enable = true; }
           ./home-manager/home.nix
         ];
       };
