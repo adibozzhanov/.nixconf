@@ -14,7 +14,7 @@
 
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
-
+  programs.hyprland.enable = true;
   networking.hostName = "hestia";
   networking.networkmanager.enable = true;
 
