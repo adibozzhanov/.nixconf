@@ -8,7 +8,6 @@
     ./keybinds.nix
     ./startup.nix
     ./monitors.nix
-    ./rofi.nix
     ./windowrules.nix
     ./waybar.nix
   ];
@@ -20,12 +19,14 @@
     hyprshot
     swaynotificationcenter
     qt5.qtwayland
+    kdePackages.qtwayland
     nwg-displays
     mpvpaper
     libsForQt5.polkit-kde-agent
   ];
 
   wayland.windowManager.hyprland = {
+    systemd.variables = ["--all"];
     enable = true;
     package = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.hyprland;
     settings = {

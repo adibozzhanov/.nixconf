@@ -2,7 +2,7 @@
   wayland.windowManager.hyprland.settings = {
     windowrulev2 = [
       "suppressevent maximize, class:.*"
-      "opacity 0.9 0.8, class:^(kitty)$"
+      "opacity 0.85 0.7, class:^(kitty)$"
       "opacity 0.9 0.8, class:^(Spotify)$"
       "opacity 0.9 0.8, class:^(whatsapp-for-linux)$"
       "opacity 0.9 0.8, class:^(Emacs)$"

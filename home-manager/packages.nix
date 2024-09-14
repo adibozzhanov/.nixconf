@@ -22,8 +22,8 @@
     nodejs_22
     grc
     whatsapp-for-linux
-    gnome.gnome-system-monitor
-    gnome.nautilus
+    gnome-system-monitor
+    nautilus
     spotify
     slurp
     vlc

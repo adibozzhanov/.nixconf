@@ -20,7 +20,7 @@
       "$mod, T, exec, $terminal"
       "$mod SHIFT, comma, exec, emacsclient -c"
       "$mod SHIFT, period, exec, emacsclient -c ~/.nixconf"
-      "$mod, SPACE, exec, rofi -show drun"
+      "$mod, SPACE, exec, pkill rofi || rofi -show drun -show-icons"
       "$mod, Q, killactive"
       "$mod SHIFT, F, togglefloating"
       "$mod SHIFT, W, exec, pkill mpvpaper && ~/.nixconf/home-manager/scripts/wallpaper.sh"
