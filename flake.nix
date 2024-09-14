@@ -22,6 +22,7 @@
         inherit system;
         modules = [
           ./nixos/configuration.nix
+          hyprland.nixosModules.default
           nixos-hardware.nixosModules.asus-zephyrus-ga402
         ];
       };

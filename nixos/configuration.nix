@@ -7,11 +7,11 @@
 {
   imports =
     [
-      inputs.hyprland.nixosModules.default
       ./hardware-configuration.nix
       ./steam.nix
       ./amd.nix
     ];
+
   programs.hyprland.enable = true;
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
