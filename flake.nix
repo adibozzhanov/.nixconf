@@ -21,8 +21,9 @@
       nixosConfigurations.hestia = nixpkgs.lib.nixosSystem {
         inherit system;
         modules = [
-          ./nixos/configuration.nix
           nixos-hardware.nixosModules.asus-zephyrus-ga402
+          hyprland.nixosModules.default
+          ./nixos/configuration.nix
         ];
       };
 
