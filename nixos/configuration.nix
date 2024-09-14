@@ -57,7 +57,7 @@
     emacs
     kitty
     where-is-my-sddm-theme
-    programs.hyprland
+    hyprland
     home-manager
   ];
 
