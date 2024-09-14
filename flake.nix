@@ -32,7 +32,7 @@
           inherit inputs;
         };
         modules = [
-          hyprland.home-managerModules.default
+          hyprland.homeManagerModules.default
           ./home-manager/home.nix
         ];
       };
