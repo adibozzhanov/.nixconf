@@ -2,7 +2,7 @@
 # your system. Help is available in the configuration.nix(5) man page, on
 # https://search.nixos.org/options and in the NixOS manual (`nixos-help`).
 
-{ config, lib, pkgs, inputs, package, ... }:
+{ config, lib, pkgs, inputs, ... }:
 
 {
   imports =
@@ -14,7 +14,7 @@
 
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
-  programs.hyprland.enable = true;
+
   programs.kitty.enable = true;
   networking.hostName = "hestia";
   networking.networkmanager.enable = true;
@@ -25,9 +25,13 @@
     keyMap = "us";
   };
 
+  programs.hyprland = {
+    enable = true;
+    package = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.hyprland;
+    portalPackage = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.xdg-desktop-portal-hyprland;
+  };
 
-  package = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.hyprland;
-  portalPackage = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.xdg-desktop-portal-hyprland;
+
 
   services.xserver.enable = true;
   services.displayManager.sddm.enable = true;
