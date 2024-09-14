@@ -30,8 +30,6 @@
     portalPackage = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.xdg-desktop-portal-hyprland;
   };
 
-
-
   services.xserver.enable = true;
   services.displayManager.sddm.enable = true;
   services.displayManager.sddm.wayland.enable = true;
@@ -59,7 +57,6 @@
     emacs
     kitty
     where-is-my-sddm-theme
-    hyprland
     home-manager
   ];
 

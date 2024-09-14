@@ -25,13 +25,16 @@
     libsForQt5.polkit-kde-agent
   ];
 
-  wayland.windowManager.hyprland.settings = {
-    input = {
-      kb_layout = "us";
-      follow_mouse = "1";
-      sensitivity = "0";
-      touchpad = {
-        natural_scroll = "true";
+  wayland.windowManager.hyprland = {
+    package = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.hyprland;
+    settings = {
+      input = {
+        kb_layout = "us";
+        follow_mouse = "1";
+        sensitivity = "0";
+        touchpad = {
+          natural_scroll = "true";
+        };
       };
     };
   };
