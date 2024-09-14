@@ -6,7 +6,7 @@
 
   programs.emacs = {
     enable = true;
-    package = pkgs.emacs-nox;
+    package = pkgs.emacs-gtk;
   };
 
   home.file.".emacs.d" = {
