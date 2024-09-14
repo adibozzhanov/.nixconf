@@ -2,7 +2,7 @@
   description = "My cool flake";
 
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-24.05";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     home-manager.url = "github:nix-community/home-manager/release-24.05";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
     nixos-hardware.url = "github:NixOS/nixos-hardware/master";
@@ -33,7 +33,6 @@
           inherit inputs;
         };
         modules = [
-          { wayland.windowManager.hyprland.enable = true; }
           ./home-manager/home.nix
         ];
       };
