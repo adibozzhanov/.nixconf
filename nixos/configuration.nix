@@ -2,7 +2,7 @@
 # your system. Help is available in the configuration.nix(5) man page, on
 # https://search.nixos.org/options and in the NixOS manual (`nixos-help`).
 
-{ config, lib, pkgs, inputs, ... }:
+{ config, lib, pkgs, ... }:
 
 {
   imports =
@@ -12,7 +12,6 @@
       ./amd.nix
     ];
 
-  programs.hyprland.enable = true;
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
@@ -51,7 +50,6 @@
     wget
     emacs
     kitty
-    hyprland
     where-is-my-sddm-theme
     home-manager
   ];
