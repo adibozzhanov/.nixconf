@@ -13,8 +13,6 @@
     ./waybar.nix
   ];
 
-  wayland.windowManager.hyprland.enable = true;
-
   home.packages = with pkgs; [
     libnotify
     hyprland-protocols
