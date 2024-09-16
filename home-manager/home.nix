@@ -20,7 +20,7 @@ in {
     ./git.nix
     ./packages.nix
     ./emacs/emacs.nix
-    ./rofi.nix
+    ./rofi/rofi.nix
   ];
 
 

@@ -22,6 +22,7 @@
     kdePackages.qtwayland
     nwg-displays
     mpvpaper
+    hyprpicker
     libsForQt5.polkit-kde-agent
   ];
 
