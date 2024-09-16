@@ -33,7 +33,7 @@
     loupe
     mpv
     pwvucontrol
-    blueman
+    blueberry
     nvtopPackages.full
   ];
 }
