@@ -10,6 +10,8 @@
     shellAliases = {
       rebh = "source ~/.nixconf/home-manager/scripts/home-rebuild.fish";
       rebn = "source ~/.nixconf/home-manager/scripts/nix-rebuild.fish";
+      nfup = "nix flake update ~/.nixconf";
+      nfstat = "pushd ~/.nixconf; git status; popd";
       econf = "emacsclient ~/.nixconf";
       confpush = "pushd ~/.nixconf && git push && popd";
     };
