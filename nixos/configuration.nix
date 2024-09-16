@@ -12,11 +12,23 @@
       ./amd.nix
     ];
 
-  boot.loader.systemd-boot.enable = true;
-  boot.loader.efi.canTouchEfiVariables = true;
+  boot = {
+    loader = {
+      systemd-boot.enable = true;
+      efi.canTouchEfiVariables = true;
+    };
+    extraModulePackages = with config.boot.kernelPackages; [
+      v4l2loopback
+    ];
+    extraModprobeConfig = ''
+    options v4l2loopback devices=1 video_nr=1 card_label="OBS Cam" exclusive_caps=1
+    '';
+  };
 
-  networking.hostName = "hestia";
-  networking.networkmanager.enable = true;
+  networking = {
+    hostName = "hestia";
+    networkmanager.enable = true;
+  };
 
   time.timeZone = "Europe/London";
   console = {
@@ -24,27 +36,41 @@
     keyMap = "us";
   };
 
-  programs.hyprland = {
-    enable = true;
-    package = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.hyprland;
-    portalPackage = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.xdg-desktop-portal-hyprland;
-  };
-
-  services.displayManager.sddm.enable = true;
-  services.displayManager.sddm.wayland.enable = true;
-  services.displayManager.sddm.theme = "where_is_my_sddm_theme";
-
   nix.settings.experimental-features = ["nix-command" "flakes"];
-  services.printing.enable = true;
+
   nixpkgs.config.allowUnfree = true;
 
-  services.pipewire = {
-    enable = true;
-    pulse.enable = true;
+  services = {
+    printing.enable = true;
+    libinput.enable = true;
+    pipewire = {
+      enable = true;
+      pulse.enable = true;
+    };
+    displayManager = {
+      sddm ={
+        enable = true;
+        wayland.enable = true;
+        theme = "where_is_my_sddm_theme";
+      };
+    };
   };
 
-  services.libinput.enable = true;
-  programs.fish.enable = true;
+  programs = {
+    gnupg.agent = {
+      enable = true;
+      enableSSHSupport = true;
+    };
+    mtr.enable = true;
+    fish.enable = true;
+    hyprland = {
+      enable = true;
+      package = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.hyprland;
+      portalPackage = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.xdg-desktop-portal-hyprland;
+    };
+
+  };
+
   users.users.bzv = {
     isNormalUser = true;
     shell =  pkgs.fish;
@@ -59,12 +85,6 @@
     hyprland
     home-manager
   ];
-
-  programs.mtr.enable = true;
-  programs.gnupg.agent = {
-    enable = true;
-    enableSSHSupport = true;
-  };
 
   hardware.bluetooth = {
     enable = true;
