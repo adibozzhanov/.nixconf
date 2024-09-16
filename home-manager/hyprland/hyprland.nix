@@ -10,6 +10,7 @@
     ./monitors.nix
     ./windowrules.nix
     ./waybar.nix
+    ./hyprlock.nix
   ];
 
   home.packages = with pkgs; [

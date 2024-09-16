@@ -26,6 +26,7 @@
       "$mod, T, exec, $terminal"
       "$mod SHIFT, X, exec, hyprpicker"
       "$mod SHIFT, P, exec, pkill rofi || rofi -show p -modi p:'rofi-power-menu --no-symbols --choices shutdown/reboot'"
+      "$mod SHIFT, L, exec, hyprlock --immediate"
       "$mod SHIFT, comma, exec, emacsclient -c"
       "$mod SHIFT, period, exec, emacsclient -c ~/.nixconf"
       "$mod, SPACE, exec, pkill rofi || rofi -show drun"
