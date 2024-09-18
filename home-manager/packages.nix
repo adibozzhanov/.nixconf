@@ -1,6 +1,7 @@
 { pkgs, ...}:
 {
   home.packages = with pkgs; [
+    prettierd
     libsForQt5.kolourpaint
     pyright
     google-fonts
