@@ -14,6 +14,7 @@
   ];
 
   home.packages = with pkgs; [
+    xrandr
     libnotify
     hyprland-protocols
     xdg-desktop-portal-hyprland
