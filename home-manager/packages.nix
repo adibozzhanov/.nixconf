@@ -18,6 +18,7 @@
     python3
     firefox
     telegram-desktop
+    discord
     webcord
     tree
     nodejs_22
