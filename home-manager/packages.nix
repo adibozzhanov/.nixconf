@@ -1,6 +1,7 @@
 { pkgs, ...}:
 {
   home.packages = with pkgs; [
+    inkscape
     nodePackages.prettier
     libsForQt5.kolourpaint
     pyright
