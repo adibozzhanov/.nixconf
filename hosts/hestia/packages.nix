@@ -1,6 +1,10 @@
 { pkgs, ...}:
 {
   home.packages = with pkgs; [
+    sqlite
+    sqlitebrowser
+    gparted
+    gnome-multi-writer
     inkscape
     nodePackages.prettier
     libsForQt5.kolourpaint

@@ -17,13 +17,12 @@
     let
       system = "x86_64-linux";
     in {
-
       nixosConfigurations.hestia = nixpkgs.lib.nixosSystem {
         inherit system;
         specialArgs = { inherit inputs; };
         modules = [
           nixos-hardware.nixosModules.asus-zephyrus-ga402
-          ./nixos/configuration.nix
+          ./hosts/hestia/configuration.nix
         ];
       };
 
@@ -33,7 +32,8 @@
           inherit inputs;
         };
         modules = [
-          ./home-manager/home.nix
+          ./hosts/hestia/home.nix
+          ./modules/home/default.nix
         ];
       };
     };

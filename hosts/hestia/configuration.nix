@@ -41,6 +41,9 @@
   nixpkgs.config.allowUnfree = true;
 
   services = {
+    devmon.enable = true;
+    gvfs.enable = true;
+    udisks2.enable = true;
     printing.enable = true;
     libinput.enable = true;
     pipewire = {

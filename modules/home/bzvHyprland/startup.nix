@@ -10,8 +10,8 @@
       "swaync"
       "nm-applet"
       "systemctl --user start plasma-polkit-agent"
-      "chmod +x ~/.nixconf/home-manager/scripts/*"
-      "~/.nixconf/home-manager/scripts/wallpaper.sh"
+      "chmod +x ~/.nixconf/scripts/*"
+      "~/.nixconf/scripts/wallpaper.sh"
     ];
   };
 }
