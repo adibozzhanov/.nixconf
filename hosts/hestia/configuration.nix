@@ -60,6 +60,11 @@
   };
 
   programs = {
+
+    appimage = {
+      enable = true;
+      binfmt = true;
+    };
     gnupg.agent = {
       enable = true;
       enableSSHSupport = true;
