@@ -5,10 +5,7 @@
   ];
 
   bzvDesktop.enable = true;
-  bzvWaybar.enable = true;
   bzvEmacs.enable = true;
-  bzvRofi.enable = true;
-  bzvKitty.enable = true;
   bzvGit.enable = true;
   bzvFish = {
     enable = true;

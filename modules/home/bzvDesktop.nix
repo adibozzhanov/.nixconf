@@ -17,6 +17,9 @@ in
 {
   imports = [
     ./bzvHyprland/bzvHyprland.nix
+    ./bzvWaybar.nix
+    ./bzvRofi/bzvRofi.nix
+    ./bzvKitty.nix
   ];
 
   options = {
@@ -25,6 +28,9 @@ in
 
   config = mkIf config.bzvDesktop.enable {
     bzvHyprland.enable = true;
+    bzvRofi.enable = true;
+    bzvWaybar.enable = true;
+    bzvKitty.enable = true;
 
     home = {
       pointerCursor = {
