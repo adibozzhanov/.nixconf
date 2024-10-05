@@ -6,6 +6,16 @@ with lib;
   };
 
   config = mkIf config.bzvEmacs.enable {
+
+    home.packages = with pkgs; [
+      sqlite
+      sqlitebrowser
+      nodePackages.prettier
+      pyright
+      python3
+      nodejs_22
+    ];
+
     services.emacs = {
       enable = true;
       package = pkgs.emacs;

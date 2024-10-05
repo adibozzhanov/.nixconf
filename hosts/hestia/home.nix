@@ -1,9 +1,5 @@
 { config, inputs, pkgs, ... }:
 {
-  imports = [
-    ./packages.nix
-  ];
-
   bzvDesktop.enable = true;
   bzvEmacs.enable = true;
   bzvGit.enable = true;
@@ -19,6 +15,15 @@
   };
 
   home = {
+    packages = with pkgs;[
+      zoom-us
+      telegram-desktop
+      firefox
+      discord
+      webcord
+      whatsapp-for-linux
+      spotify
+    ];
     username = "bzv";
     homeDirectory = "/home/bzv";
     file = {

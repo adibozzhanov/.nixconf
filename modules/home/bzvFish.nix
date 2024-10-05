@@ -7,6 +7,13 @@ with lib;
   };
 
   config = mkIf config.bzvFish.enable {
+    home.packages = with pkgs; [
+      grc
+      neofetch
+      git-filter-repo
+      htop
+      tree
+    ];
 
     programs.fish = {
       enable = true;

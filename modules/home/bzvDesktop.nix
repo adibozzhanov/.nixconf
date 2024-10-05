@@ -27,6 +27,33 @@ in
   };
 
   config = mkIf config.bzvDesktop.enable {
+
+    home.packages = with pkgs; [
+      loupe
+      wineWowPackages.waylandFull
+      lutris
+      socat
+      networkmanagerapplet
+      font-awesome
+      gnome-system-monitor
+      nautilus
+      slurp
+      vlc
+      wf-recorder
+      ffmpeg
+      mpv
+      pwvucontrol
+      blueberry
+      nvtopPackages.full
+      google-fonts
+      libsForQt5.kolourpaint
+      inkscape
+      gparted
+      obs-studio
+      bash
+      gnome-multi-writer
+    ];
+
     bzvHyprland.enable = true;
     bzvRofi.enable = true;
     bzvWaybar.enable = true;
