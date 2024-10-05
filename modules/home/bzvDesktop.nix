@@ -54,6 +54,11 @@ in
       gnome-multi-writer
     ];
 
+    programs.appimage = {
+      enable = true;
+      binfmt = true;
+    };
+
     bzvHyprland.enable = true;
     bzvRofi.enable = true;
     bzvWaybar.enable = true;
