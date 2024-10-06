@@ -19,6 +19,9 @@
       "$mod SHIFT, right, exec, echo 'playlist-next' | socat - /tmp/mpv-socket"
       "$mod SHIFT, left, exec, echo 'playlist-prev' | socat - /tmp/mpv-socket"
       "$mod SHIFT, down, exec, echo 'cycle pause' | socat - /tmp/mpv-socket"
+      "$mod SHIFT, up, exec, pkill mpvpaper || ~/.nixconf/scripts/wallpaper.sh"
+
+      "$mod SHIFT, G, exec, fish ~/.nixconf/scripts/potatomode.fish"
 
       # various
       ", Print, exec, hyprshot -m region -o ~/screenshots"
@@ -32,7 +35,6 @@
       "$mod, SPACE, exec, pkill rofi || rofi -show drun"
       "$mod, Q, killactive"
       "$mod SHIFT, F, togglefloating"
-      "$mod SHIFT, W, exec, pkill mpvpaper && ~/.nixconf/scripts/wallpaper.sh"
       "$mod SHIFT, B, exec, pkill waybar && waybar"
       ", F11, fullscreen"
 

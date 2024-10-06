@@ -14,6 +14,7 @@ with lib;
       pyright
       python3
       nodejs_22
+      monocraft
     ];
 
     services.emacs = {

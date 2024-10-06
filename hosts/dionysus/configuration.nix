@@ -34,14 +34,7 @@
   nixpkgs.config.allowUnfree = true;
 
   services = {
-    xserver = {
-      enable = true;
-      videoDrivers = ["amdgpu"];
-      desktopManager = {
-        xterm.enable = false;
-        xfce.enable = true;
-      };
-    };
+    xserver.videoDrivers = ["amdgpu"];
     devmon.enable = true;
     gvfs.enable = true;
     udisks2.enable = true;
@@ -49,14 +42,9 @@
     libinput.enable = true;
     pipewire = {
       enable = true;
-      alsa = {
-        enable = true;
-        support32Bit = true;
-      };
       pulse.enable = true;
     };
     displayManager = {
-      defaultSession = "hyprland";
       sddm ={
         enable = true;
         wayland.enable = true;
@@ -83,24 +71,16 @@
     };
   };
 
-  users.users = {
-    adi = {
-      isNormalUser = true;
-      shell =  pkgs.fish;
-      extraGroups = [ "wheel" "input" "networkmanager" ];
-    };
-    bzv = {
-      isNormalUser = true;
-      shell =  pkgs.fish;
-      extraGroups = [ "wheel" "input" "networkmanager" ];
-    };
+  users.users.bzv = {
+    isNormalUser = true;
+    shell =  pkgs.fish;
+    extraGroups = [ "wheel" "input" "networkmanager" ];
   };
 
   environment.systemPackages = with pkgs; [
     wget
     emacs
     kitty
-    git
     where-is-my-sddm-theme
     hyprland
     home-manager

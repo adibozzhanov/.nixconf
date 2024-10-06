@@ -17,24 +17,46 @@
     let
       system = "x86_64-linux";
     in {
-      nixosConfigurations.hestia = nixpkgs.lib.nixosSystem {
-        inherit system;
-        specialArgs = { inherit inputs; };
-        modules = [
-          nixos-hardware.nixosModules.asus-zephyrus-ga402
-          ./hosts/hestia/configuration.nix
-        ];
+      nixosConfigurations = {
+        dionysus = nixpkgs.lib.nixosSystem {
+          inherit system;
+          specialArgs = { inherit inputs; };
+          modules = [
+            ./hosts/dionysus/configuration.nix
+          ];
+        };
+
+        hestia = nixpkgs.lib.nixosSystem {
+          inherit system;
+          specialArgs = { inherit inputs; };
+          modules = [
+            nixos-hardware.nixosModules.asus-zephyrus-ga402
+            ./hosts/hestia/configuration.nix
+          ];
+        };
       };
 
-      homeConfigurations.bzv = home-manager.lib.homeManagerConfiguration {
-        pkgs = nixpkgs.legacyPackages.${system};
-        extraSpecialArgs = {
-          inherit inputs;
+      homeConfigurations = {
+        adi = home-manager.lib.homeManagerConfiguration {
+          pkgs = nixpkgs.legacyPackages.${system};
+          extraSpecialArgs = {
+            inherit inputs;
+          };
+          modules = [
+            ./users/adi/home.nix
+            ./modules/home/default.nix
+          ];
         };
-        modules = [
-          ./hosts/hestia/home.nix
-          ./modules/home/default.nix
-        ];
+        bzv = home-manager.lib.homeManagerConfiguration {
+          pkgs = nixpkgs.legacyPackages.${system};
+          extraSpecialArgs = {
+            inherit inputs;
+          };
+          modules = [
+            ./users/bzv/home.nix
+            ./modules/home/default.nix
+          ];
+        };
       };
     };
 }
