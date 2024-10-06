@@ -8,5 +8,6 @@
     ./bzvWaybar.nix
     ./bzvHyprland/bzvHyprland.nix
     ./bzvDesktop.nix
+    ./bzvMinecraft/bzvMinecraft.nix
   ];
 }

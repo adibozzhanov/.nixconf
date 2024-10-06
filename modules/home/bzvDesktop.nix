@@ -51,6 +51,8 @@ in
       gparted
       obs-studio
       bash
+      appimagekit
+      file-roller
       gnome-multi-writer
     ];
 
