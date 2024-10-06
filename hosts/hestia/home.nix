@@ -3,7 +3,7 @@
   bzvDesktop.enable = true;
   bzvEmacs.enable = true;
   bzvGit.enable = true;
-  bzvMinecraft.enable = true;
+  bzvMinecraft.enable = false;
   bzvFish = {
     enable = true;
     withAliases = true;
