@@ -24,6 +24,7 @@ with lib;
       shellAliases = mkIf config.bzvFish.withAliases {
         rebh = "source ~/.nixconf/scripts/home-rebuild.fish";
         rebn = "source ~/.nixconf/scripts/nix-rebuild.fish";
+        rebf = "source ~/.nixconf/scripts/full-rebuild.fish";
         nfup = "nix flake update ~/.nixconf";
         nfstat = "pushd ~/.nixconf; git status; popd";
         econf = "emacsclient ~/.nixconf";
