@@ -15,8 +15,6 @@ function normalmode
     hyprctl keyword exec ~/.nixconf/scripts/wallpaper.sh
 end
 
-
-
 if hyprctl getoption animations:enabled | grep "int" | grep "1"
     potatomode
 else
