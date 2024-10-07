@@ -1,5 +1,7 @@
 { config, inputs, pkgs, ... }:
 {
+
+  bzvDesktop.enable = true;
   bzvEmacs.enable = true;
   bzvGit.enable = true;
   bzvFish = {
@@ -14,8 +16,8 @@
   };
 
   home = {
-    username = "bzv";
-    homeDirectory = "/home/bzv";
+    username = "adi";
+    homeDirectory = "/home/adi";
     file = {
       "code/.keep".source = builtins.toFile "keep" "";
     };
