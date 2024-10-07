@@ -72,7 +72,7 @@ with lib;
 * {
     border: none;
     border-radius: 0;
-    font-family: JetBrains Mono;
+    font-family: Mononoki Nerd Font Regular;
     font-weight: bold;
     min-height: 0px;
 }

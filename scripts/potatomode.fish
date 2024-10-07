@@ -6,6 +6,7 @@ function potatomode
     hyprctl keyword decoration:rounding 0
     hyprctl keyword decoration:drop_shadow 0
     hyprctl keyword decoration:blur:enabled 0
+    hyprctl keyword decoration:inactive_opacity: 1
     pkill mpvpaper
 end
 

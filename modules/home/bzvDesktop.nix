@@ -35,7 +35,6 @@ in
       lutris
       socat
       networkmanagerapplet
-      font-awesome
       gnome-system-monitor
       nautilus
       slurp
@@ -54,7 +53,25 @@ in
       appimagekit
       file-roller
       gnome-multi-writer
+      fira-code
+      fira-code-symbols
+      font-awesome
+      liberation_ttf
+      mplus-outline-fonts.githubRelease
+      nerdfonts
+      noto-fonts
+      noto-fonts-emoji
+      proggyfonts
     ];
+
+    fonts = {
+      fontconfig = {
+        enable = true;
+        defaultFonts = {
+          monospace = ["Hurmit Nerd Font Mono"];
+        };
+      };
+    };
 
     bzvHyprland.isUbuntu = config.bzvDesktop.isUbuntu;
     bzvHyprland.enable = true;
@@ -101,8 +118,8 @@ in
       };
 
       font = {
-        package = (pkgs.nerdfonts.override { fonts = [ "Mononoki" ]; });
-        name = "Mononoki Nerd Font Regular";
+        package = pkgs.nerdfonts;
+        name = "IBM 3270 Nerd Font Regular";
         size = 12;
       };
     };

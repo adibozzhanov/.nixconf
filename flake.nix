@@ -44,7 +44,7 @@
         adi = home-manager.lib.homeManagerConfiguration {
           pkgs = nixpkgs.legacyPackages.${system};
           extraSpecialArgs = {
-            inherit self nixpkgs inputs;
+            inherit self inputs;
           };
           modules = [
             ./users/adi/home.nix
