@@ -1,4 +1,3 @@
-
 function potatomode
     hyprctl keyword animations:enabled 0
     hyprctl keyword general:gaps_in 0
@@ -15,7 +14,7 @@ function normalmode
     hyprctl keyword exec ~/.nixconf/scripts/wallpaper.sh
 end
 
-if hyprctl getoption animations:enabled | grep "int" | grep "1"
+if hyprctl getoption animations:enabled | grep "1"
     potatomode
 else
     normalmode
