@@ -24,6 +24,7 @@ in
 
   options = {
     bzvDesktop.enable = mkEnableOption "Enable desktop module";
+    bzvDesktop.isUbuntu = mkEnableOption "Setup hyprland for ubuntu";
   };
 
   config = mkIf config.bzvDesktop.enable {
@@ -55,6 +56,7 @@ in
       gnome-multi-writer
     ];
 
+    bzvHyprland.isUbuntu = config.bzvDesktop.isUbuntu;
     bzvHyprland.enable = true;
     bzvRofi.enable = true;
     bzvWaybar.enable = true;

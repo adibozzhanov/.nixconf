@@ -14,6 +14,7 @@ with lib;
 
   options = {
     bzvHyprland.enable = mkEnableOption "Enable hyprland";
+    bzvHyprland.isUbuntu = mkEnableOption "Enable ubuntu mode";
   };
 
   config = mkIf config.bzvHyprland.enable {
@@ -36,7 +37,11 @@ with lib;
     wayland.windowManager.hyprland = {
       systemd.variables = ["--all"];
       enable = true;
-      package = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.hyprland;
+      package =
+        if config.bzvHyprland.isUbuntu
+        then config.lib.nixGL.wrap pkgs.hyprland
+        else inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.hyprland;
+
       settings = {
         input = {
           kb_layout = "us";
