@@ -26,7 +26,7 @@
           inherit system;
           specialArgs = { inherit inputs; };
           modules = [
-            ./hosts/dionysus/configuration.nix
+            ./nix-hosts/dionysus/configuration.nix
           ];
         };
 
@@ -35,7 +35,7 @@
           specialArgs = { inherit inputs; };
           modules = [
             nixos-hardware.nixosModules.asus-zephyrus-ga402
-            ./hosts/hestia/configuration.nix
+            ./nix-hosts/hestia/configuration.nix
           ];
         };
       };

@@ -15,6 +15,7 @@ with lib;
       tree
     ];
 
+
     programs.fish = {
       enable = true;
       interactiveShellInit = ''

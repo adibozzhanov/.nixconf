@@ -21,6 +21,8 @@
       "$mod SHIFT, down, exec, echo 'cycle pause' | socat - /tmp/mpv-socket"
       "$mod SHIFT, up, exec, pkill mpvpaper || ~/.nixconf/scripts/wallpaper.sh"
 
+      "ALT, TAB, cyclenext"
+
       "$mod SHIFT, G, exec, fish ~/.nixconf/scripts/potatomode.fish"
 
       # various

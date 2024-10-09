@@ -23,6 +23,8 @@ in
     # accessia thing
     set -x ACCESSIA_MAIN_REPO '~/Documents/code/accessia/main'
 
+    neofetch
+
     # Created by `pipx` on 2024-08-13 11:54:28
     set PATH $PATH /home/adi/.local/bin
     '';
@@ -67,8 +69,6 @@ in
       allowUnfreePredicate = _: true;
     };
   };
-
-  fonts.fontconfig.enable = true;
 
   home = {
     packages = with pkgs; [
