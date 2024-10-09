@@ -12,8 +12,8 @@
       "float, class: ^(blueberry.py)$"
       "float, class: ^(nwg-displays)$"
       "float, class: ^(com.saivert.pwvucontrol)$"
-      "idleinhibit fullscreen, class:^(*)$"
-      "idleinhibit fullscreen, title:^(*)$"
+      "idleinhibit fullscreen, class:^(.*)$"
+      "idleinhibit fullscreen, title:^(.*)$"
       "idleinhibit fullscreen, fullscreen:1"
     ];
   };

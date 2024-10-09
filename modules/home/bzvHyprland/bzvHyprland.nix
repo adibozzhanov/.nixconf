@@ -15,6 +15,7 @@ with lib;
   options = {
     bzvHyprland.enable = mkEnableOption "Enable hyprland";
     bzvHyprland.isUbuntu = mkEnableOption "Enable ubuntu mode";
+    bzvHyprland.debug = mkEnableOption "Enable debug";
   };
 
   config = mkIf config.bzvHyprland.enable {
@@ -34,15 +35,22 @@ with lib;
       libsForQt5.polkit-kde-agent
     ];
 
-    wayland.windowManager.hyprland = {
+    wayland.windowManager.hyprland =
+      let
+        basePkg = if config.bzvHyprland.isUbuntu
+                  then config.lib.nixGL.wrap pkgs.hyprland
+                  else inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.hyprland;
+      in
+      {
       systemd.variables = ["--all"];
       enable = true;
-      package =
-        if config.bzvHyprland.isUbuntu
-        then config.lib.nixGL.wrap pkgs.hyprland
-        else inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.hyprland;
+      package = basePkg.override { debug = config.bzvHyprland.debug; };
 
       settings = {
+        debug = mkIf config.bzvHyprland.debug {
+          disable_logs = "false";
+        };
+
         input = {
           kb_layout = "us";
           follow_mouse = "1";

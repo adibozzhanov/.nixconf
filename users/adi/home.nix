@@ -50,12 +50,12 @@ in
     };
   };
 
-  bzvDesktop.enable = true;
+  bzvDesktop = {
+    enable = true;
+    isUbuntu = true;
+  };
   bzvEmacs.enable = true;
   bzvGit.enable = true;
-  bzvKitty.enable = true;
-  bzvDesktop.isUbuntu = true;
-  bzvKitty.isUbuntu = true;
   bzvFish = {
     enable = true;
     withAliases = true;

@@ -25,6 +25,7 @@ in
   options = {
     bzvDesktop.enable = mkEnableOption "Enable desktop module";
     bzvDesktop.isUbuntu = mkEnableOption "Setup hyprland for ubuntu";
+    bzvDesktop.debug = mkEnableOption "Enable debug";
   };
 
   config = mkIf config.bzvDesktop.enable {
@@ -73,11 +74,17 @@ in
       };
     };
 
-    bzvHyprland.isUbuntu = config.bzvDesktop.isUbuntu;
-    bzvHyprland.enable = true;
+    bzvHyprland = {
+      enable = true;
+      isUbuntu = config.bzvDesktop.isUbuntu;
+      debug = config.bzvDesktop.debug;
+    };
     bzvRofi.enable = true;
     bzvWaybar.enable = true;
-    bzvKitty.enable = true;
+    bzvKitty = {
+      enable = true;
+      isUbuntu = config.bzvDesktop.isUbuntu;
+    };
 
     programs.obs-studio = {
       enable = true;
