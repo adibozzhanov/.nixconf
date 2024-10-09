@@ -51,10 +51,10 @@ in
   };
 
   bzvDesktop.enable = true;
-  bzvDesktop.isUbuntu = true;
   bzvEmacs.enable = true;
   bzvGit.enable = true;
   bzvKitty.enable = true;
+  bzvDesktop.isUbuntu = true;
   bzvKitty.isUbuntu = true;
   bzvFish = {
     enable = true;
@@ -72,7 +72,6 @@ in
 
   home = {
     packages = with pkgs; [
-      (config.lib.nixGL.wrap zoom-us)
       telegram-desktop
       firefox
       webcord
