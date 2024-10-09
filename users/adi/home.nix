@@ -22,6 +22,8 @@ in
     interactiveShellInit = ''
     # accessia thing
     set -x ACCESSIA_MAIN_REPO '~/Documents/code/accessia/main'
+    set -x TF_PLUGIN_CACHE_DIR '/home/adi/terraform_cache'
+    set -x TERRAGRUNT_PROVIDER_CACHE 1
 
     neofetch
 
@@ -37,6 +39,7 @@ in
       cdrest = "cd ~/Documents/code/accessia/main/clients/web/rest_controller_ui";
       cdredux = "cd ~/Documents/code/accessia/web_common/@accessia/api-redux";
       cdhooks = "cd ~/Documents/code/accessia/web_common/@accessia/hooks";
+      cdinfra = "cd ~/Documents/code/accessia/cloud-infra-template";
       cdweb = "cd ~/Documents/code/accessia/web_common";
       cdtheme = "cd ~/Documents/code/accessia/web_common/@accessia/mui-theme";
       cdandroid = "cd ~/Documents/code/accessia/android";
@@ -72,6 +75,8 @@ in
 
   home = {
     packages = with pkgs; [
+      terraform
+      terragrunt
       telegram-desktop
       firefox
       webcord

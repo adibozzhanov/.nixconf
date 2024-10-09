@@ -26,14 +26,16 @@ with lib;
       hyprland-protocols
       xdg-desktop-portal-hyprland
       hyprshot
-      swaynotificationcenter
       qt5.qtwayland
       kdePackages.qtwayland
       nwg-displays
       mpvpaper
       hyprpicker
       libsForQt5.polkit-kde-agent
-    ];
+    ] ++ (
+      if !config.bzvHyprland.isUbuntu
+      then [ swaynotificationcenter ]
+      else []);
 
     wayland.windowManager.hyprland =
       let

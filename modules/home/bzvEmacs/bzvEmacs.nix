@@ -12,7 +12,9 @@ with lib;
       sqlitebrowser
       nodePackages.prettier
       pyright
-      python3
+      (python3.withPackages (ppkgs: with ppkgs;[
+        boto3
+      ]))
       nodejs_22
       monocraft
     ];

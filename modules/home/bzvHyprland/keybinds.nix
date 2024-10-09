@@ -1,4 +1,4 @@
-{
+{ config, ...}:{
   wayland.windowManager.hyprland.settings = {
 
     gestures = {
@@ -31,7 +31,6 @@
       "$mod, T, exec, $terminal"
       "$mod SHIFT, X, exec, hyprpicker"
       "$mod SHIFT, P, exec, pkill rofi || rofi -show p -modi p:'rofi-power-menu --no-symbols --choices shutdown/reboot'"
-      "$mod SHIFT, L, exec, hyprlock --immediate"
       "$mod SHIFT, comma, exec, emacsclient -c"
       "$mod SHIFT, period, exec, emacsclient -c ~/.nixconf"
       "$mod, SPACE, exec, pkill rofi || rofi -show drun"
@@ -72,6 +71,10 @@
       "$mod SHIFT, 8, movetoworkspace, 8"
       "$mod SHIFT, 9, movetoworkspace, 9"
       "$mod SHIFT, 0, movetoworkspace, 10"
-    ];
+    ] ++ (
+      if config.bzvHyprland.isUbuntu
+      then ["$mod SHIFT, L, exec, swaylock -i ~/Pictures/wallpapers/wpp.png"]
+      else ["$mod SHIFT, L, exec, hyprlock --immediate"]
+    );
   };
 }
