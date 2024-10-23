@@ -1,7 +1,4 @@
 { config, lib, inputs, pkgs, ... }:
-let
-  nixGLIntel = inputs.nixGL.packages.${pkgs.system}.nixGLIntel;
-in
 {
   imports = [
     (builtins.fetchurl {
@@ -58,7 +55,7 @@ in
     enable = true;
     isUbuntu = true;
   };
-  bzvEmacs.enable = true;
+  bzv.emacs.enable = true;
   bzvGit.enable = true;
   bzvFish = {
     enable = true;

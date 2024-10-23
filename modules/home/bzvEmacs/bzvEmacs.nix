@@ -1,12 +1,14 @@
 { pkgs, lib, config, ... }:
 with lib;
+let
+  enabled = config.bzv.emacs.enable;
+in
 {
-  options = {
-    bzvEmacs.enable = mkEnableOption "Enable emacs config";
+  options.bzv.emacs = {
+    enable = mkEnableOption "Enable emacs config";
   };
 
-  config = mkIf config.bzvEmacs.enable {
-
+  config = mkIf enabled {
     home.packages = with pkgs; [
       sqlite
       sqlitebrowser

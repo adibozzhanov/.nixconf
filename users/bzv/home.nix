@@ -1,7 +1,7 @@
 { config, inputs, pkgs, ... }:
 {
   bzvDesktop.enable = true;
-  bzvEmacs.enable = true;
+  bzv.emacs.enable = true;
   bzvGit.enable = true;
   bzvMinecraft.enable = true;
   bzvFish = {
